@@ -33,9 +33,7 @@ all: $(TARGET).pdf
 # missing file reference and interactively asking you for an alternative.
 
 $(TARGET).pdf: $(TARGET).tex
-	latexmk -outdir=$(OUTDIR) -pdflatex="pdflatex -interaction=nonstopmode" -use-make $(TARGET).tex
-	#makeglossaries -d $(OUTDIR) $(TARGET)
-	#latexmk -outdir=$(OUTDIR) -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make $(TARGET).tex
+	latexmk -outdir=$(OUTDIR) -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make $(TARGET).tex
 
 clean:
 	@latexmk -CA
