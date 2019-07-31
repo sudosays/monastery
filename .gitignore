@@ -2,3 +2,5 @@
 *.pdf
 *.pdf_tex
 build/
+.ipynb_checkpoints
+venv
