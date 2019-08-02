@@ -8,9 +8,11 @@
 
 % To use glossaries uncomment below
 
-%\usepackage[toc]{glossaries}
-%\makeglossaries
-%\include{<glossaryfilename>}
+\usepackage{glossaries}
+
+\include{glossary}
+
+\makeglossaries
 
 \begin{document}
 
@@ -148,8 +150,17 @@ which no model exists or a model is too computationally expensive to use,
 model-free methods are used. For problems where accuracy matters, or the model
 is well known, model-based methods can be used for expedited learning.
 
-%\appendix
-
+\bibliographystyle{acm}
 \bibliography{refs.bib}
+
+\appendix
+
+%
+% Glossaries
+%
+
+\glsaddall
+
+\printglossary[nonumberlist]
 
 \end{document}
