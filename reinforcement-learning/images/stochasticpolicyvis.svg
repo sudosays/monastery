@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 43.57544 45.07032"
+   height="45.07032mm"
+   width="43.575439mm"
+   sodipodi:docname="stochasticpolicyvis.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1918"
+     inkscape:window-height="1055"
+     id="namedview915"
+     showgrid="false"
+     inkscape:zoom="2.597804"
+     inkscape:cx="112.47361"
+     inkscape:cy="106.62731"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-text-baseline="false" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient11010">
+      <stop
+         id="stop11006"
+         offset="0"
+         style="stop-color:#00ccff;stop-opacity:1;" />
+      <stop
+         id="stop11008"
+         offset="1"
+         style="stop-color:#00ccff;stop-opacity:0;" />
+    </linearGradient>
+    <meshgradient
+       y="73.972954"
+       x="75.489677"
+       gradientUnits="userSpaceOnUse"
+       id="meshgradient4654">
+      <meshrow
+         id="meshrow4656">
+        <meshpatch
+           id="meshpatch4658">
+          <stop
+             id="stop4660"
+             style="stop-color:#ffffff;stop-opacity:1"
+             path="c 31.4239,0  62.8477,0  94.2716,0" />
+          <stop
+             id="stop4662"
+             style="stop-color:#f2f2f2;stop-opacity:1"
+             path="c 0,11.0921  0,22.1841  0,33.2762" />
+          <stop
+             id="stop4664"
+             style="stop-color:#ffffff;stop-opacity:1"
+             path="c -31.4239,0  -62.8477,0  -94.2716,0" />
+          <stop
+             id="stop4666"
+             style="stop-color:#f2f2f2;stop-opacity:1"
+             path="c 0,-11.0921  0,-22.1841  0,-33.2762" />
+        </meshpatch>
+      </meshrow>
+    </meshgradient>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="76.846657"
+       x2="198.99364"
+       y1="95.822792"
+       x1="90.490425"
+       id="linearGradient11012"
+       xlink:href="#linearGradient11010"
+       gradientTransform="matrix(0.42611857,0,0,0.47394399,-28.148187,-12.267175)" />
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.90244091px;line-height:2.97256398px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458329"
+     x="13.3341"
+     y="42.715183"
+     id="text86"
+     transform="scale(0.94820388,1.0546255)"><tspan
+       id="tspan84"
+       x="13.3341"
+       y="42.715183"
+       style="font-size:2.11666679px;stroke-width:0.26458329">states</tspan></text>
+  <g
+     id="g4612"
+     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.44504228;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     transform="matrix(0.42611857,0,0,0.47394399,-28.857806,-8.4945175)">
+    <path
+       id="path4614"
+       style="fill:#353564;fill-rule:evenodd;stroke:#000000;stroke-width:0.44504228;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 75.489671,51.421737 H 136.48509 L 169.76126,18.145562 H 108.76585 Z"
+       points="136.48509,51.421737 169.76126,18.145562 108.76585,18.145562 75.489671,51.421737 "
+       inkscape:connector-curvature="0" />
+    <path
+       id="path4622"
+       style="fill:#afafde;fill-rule:evenodd;stroke:#000000;stroke-width:0.44504228;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 136.48509,51.421737 V 107.24914 L 169.76126,73.972961 V 18.145562 Z"
+       points="136.48509,107.24914 169.76126,73.972961 169.76126,18.145562 136.48509,51.421737 "
+       inkscape:connector-curvature="0" />
+    <path
+       id="path4618"
+       style="fill:#8686bf;fill-rule:evenodd;stroke:#000000;stroke-width:0.44504228;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 75.489671,51.421737 V 107.24914 H 136.48509 V 51.421737 Z"
+       points="75.489671,107.24914 136.48509,107.24914 136.48509,51.421737 75.489671,51.421737 "
+       inkscape:connector-curvature="0" />
+    <path
+       id="path4624"
+       style="fill:#ececec;fill-rule:evenodd;stroke:#000000;stroke-width:0.44504228;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 108.76585,18.145562 v 55.827399 h 60.99541 V 18.145562 Z"
+       points="108.76585,73.972961 169.76126,73.972961 169.76126,18.145562 108.76585,18.145562 "
+       inkscape:connector-curvature="0" />
+    <path
+       id="path4616"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.44504228;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 75.489671,51.421737 V 107.24914 L 108.76585,73.972961 V 18.145562 Z"
+       points="75.489671,107.24914 108.76585,73.972961 108.76585,18.145562 75.489671,51.421737 "
+       inkscape:connector-curvature="0" />
+    <path
+       id="path4620"
+       style="fill:url(#meshgradient4654);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.44504228;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 75.489671,107.24914 H 136.48509 L 169.76126,73.972961 H 108.76585 Z"
+       points="136.48509,107.24914 169.76126,73.972961 108.76585,73.972961 75.489671,107.24914 "
+       inkscape:connector-curvature="0" />
+  </g>
+  <path
+     style="fill:url(#linearGradient11012);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.2, 0.4;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 17.33899,20.661789 C 5.4312667,20.482349 10.479557,28.18474 4.6295424,35.063363 11.738654,30.817865 23.963941,35.299417 30.384384,35.705412 34.71138,25.839014 39.665562,26.007568 43.283697,20.123596 32.869188,15.723258 26.40733,20.475109 17.33899,20.661789 Z"
+     id="path4620-2"
+     inkscape:connector-curvature="0" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333359px;line-height:6.61458349px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+     x="-36.982506"
+     y="1.6081706"
+     id="text846"
+     transform="rotate(-90)"><tspan
+       sodipodi:role="line"
+       id="tspan844"
+       x="-36.982506"
+       y="1.6081706"
+       style="font-size:2.11666679px;stroke-width:0.26458335">probability</tspan></text>
+  <text
+     transform="scale(0.94820388,1.0546255)"
+     id="text847"
+     y="35.95504"
+     x="37.179649"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.90244091px;line-height:2.97256398px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458329"
+     xml:space="preserve"><tspan
+       style="font-size:2.11666679px;stroke-width:0.26458329"
+       y="35.95504"
+       x="37.179649"
+       id="tspan845">actions</tspan></text>
+</svg>
