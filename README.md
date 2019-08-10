@@ -1,7 +1,8 @@
 # Welcome to the Monastery #
 
 The current list of topics found in here is:
-* No topics yet
+- Android [In progress]
+- Reinforcement Learning [In progress]
 
 This is a repository where I keep all my notes on various dev and non-dev related topics.
 
