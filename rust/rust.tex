@@ -1,0 +1,100 @@
+\documentclass[12pt,notitlepage]{article}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks = true, linkcolor = blue}
+
+\usepackage{graphicx}
+\graphicspath{{.images/}}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+
+
+\lstset{basicstyle=\footnotesize\ttfamily}
+
+% To use glossaries uncomment below
+
+%\usepackage[toc]{glossaries}
+%\makeglossaries
+%\include{<glossaryfilename>}
+
+\begin{document}
+
+\title{Rust Programming Language}
+\author{}
+\date{}
+\maketitle
+
+%\tableofcontents
+%\newpage
+
+These notes are made from studying this
+\href{https://doc.rust-lang.org/book/title-page.html}{book} 
+
+\section{Hello World}
+
+All Rust programs must feature a main function defined by
+
+\begin{lstlisting}
+fn main() {}
+\end{lstlisting}
+
+
+\subsection{Compilation}
+
+Compiling is done using the rustc command and supplying the file containing the
+main function
+
+\subsection{Marco not function}
+
+the println! is not a function but a macro. Macros are specified with an
+exclamation point ``!''.
+
+\section{Cargo}
+
+Cargo is a useful tool for project creation and dependency management.
+
+\subsection{Starting new projects}
+
+Using \lstinline{cargo new <name>} automatically creates a new dir and
+initialises a git repo in it. In the new repo you will find the following:
+
+\begin{itemize}
+    \item Cargo.toml
+    \item .gitignore
+    \item src
+        \begin{itemize}
+            \item main.rs
+        \end{itemize}
+\end{itemize}
+
+\subsection{Cargo.toml}
+
+The Cargo.toml file is a configuration file for the project written in Toms
+Obvious Minimal Language.
+
+It specifies a Rust package or \emph{crate}.
+
+Cargo expects all code to live within the src directory and all of the
+configuration, README, and licenses to live in the top-level directory.
+
+\subsection{Building with Cargo}
+
+Cargo has three different commands to check, build, and run the Rust code
+called \lstinline{check}, \lstinline{build}, and \lstinline{run}.
+
+Cargo check doesn't actually build a runnable executable, but does a quick
+check to see if your code will compile. Build on the other hand actually
+creates a binary executable and places it in the target/debug folder. Finally,
+run builds and then runs the code from the target/debug folder.
+
+Should you wish to release a binary executable, adding the flag
+\lstinline{--release} to the build command will build a release version that
+has been optimised thoroughly.
+
+%\appendix
+
+
+\end{document}
