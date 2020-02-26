@@ -3,9 +3,9 @@
 This is a repository where I keep all my notes on various dev and non-dev related topics.
 
 The current list of topics found in here is:
-- Android [In progress]
-- Reinforcement Learning [In progress]
-- Rust programming language
+- [ ] Android
+- [ ] Reinforcement Learning
+- [ ] Rust programming language
 
 ## Using these notes
 
