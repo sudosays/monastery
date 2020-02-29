@@ -6,6 +6,7 @@ The current list of topics found in here is:
 - [ ] Android
 - [ ] Reinforcement Learning
 - [ ] Rust programming language
+- [ ] Data Structures and Algorithms
 
 ## Using these notes
 
