@@ -1,0 +1,43 @@
+# Tools and workflow
+
+The `go` command comes with a bunch of useful tools, here I list them and how I
+use them for my Go projects.
+
+**NOTE: For all of these commands, to run them on all the packages from the
+project root use `go <cmd> ./...`**
+
+# `go test`
+
+This is one I probably use the most of all.
+
+This will run all the files that end in `_test.go` and make use of the
+`testing` package within a directory.
+
+Some good options for `go test` are `-v` for verbose mode.
+
+In future, I'll be including a whole chapter on testing I think.
+
+# `go mod`
+
+Since Go 1.11, there has been support
+
+# My Workflow
+
+I try to use Test Driven Development when working with Go since it is so easy
+to write and run tests. I typically follow a rough workflow as outlined below:
+
+## Starting a project
+
+1. Create the directory in the Go env
+2. Use `go mod init` to create  a new `go.mod` file
+3. Structure the project according to your needs.
+
+## Writing code
+
+1. Create `foo.go` and populate the package name
+2. Create `foo_test.go` in the same directory
+3. Write test cases for all the features/functionality you want to build
+4. Run `go test`
+5. Write code in `foo.go`
+6. Repeat 4-5 until all tests pass
+7. Repeat 1-7 until project complete
