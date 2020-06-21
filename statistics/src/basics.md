@@ -1,0 +1,35 @@
+# Basics
+
+All of these are a discussion of basic statistical terms and their uses. The
+aim here is to present the theoretical basis and glossary for these terms.
+Throughout the rest of these notes, the terms will not be recalculated or
+reimplemented but rather the library versions will be used (such as numpy or
+scikit learn)
+
+## Terms
+
+### Mean
+
+The mean is probably the best known (and possibly most widely used) statistical
+term. However, it has many different types as listed below.
+
+#### Arithmetic mean
+
+Given the set \\(x = \\{x_1, x_2, x_3 \dots x_n\\}\\) then the arithmetic mean (\\(\bar{x}\\)) is given by:
+
+\\[\bar{x} = \frac{\sum^n_{i=1} {x_i}}{n}\\]
+
+#### Weighted arithmetic mean
+
+Given a set of numbers \\(x = \\{x_1, x_2, x_3 \dots x_n\\}\\) and a set of
+corresponding weights \\(w = \\{w_1, w_2, w_3 \dots w_n\\}\\) we can produce a
+weighted arithmetic sum as follows:
+
+\\[\bar{x}=\frac{\sum_{i=1}^n{x_iw_i}}{\sum_{i=1}^n{w_i}}\\]
+
+### Standard deviation
+
+There is a distinction between sample standard deviation and population
+standard deviation. 
+
+The standard deviation is the square root of the variance (also discussed here)
