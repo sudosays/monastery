@@ -1,7 +1,9 @@
 # Summary
 [Introduction](./intro.md)
+- [Learning Path](./learning_path.md)
 - [Hello World!](./hello_world.md)
     - [The `println!` Macro](./println.md)
+
 - [Cargo](./cargo.md)
 - [Data Types](./data_types.md)
 - [Variables and Constants](./vars_consts.md)
