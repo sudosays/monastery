@@ -1,35 +1,13 @@
-\documentclass[12pt,notitlepage]{article}
+#+title: Reinforcement Learning
+#+OPTIONS: author:nil date:nil
 
-\usepackage{hyperref}
-\hypersetup{colorlinks = true, linkcolor = blue}
-
-\usepackage{graphicx}
-\graphicspath{{images/}}
-
-% To use glossaries uncomment below
-
-\usepackage{glossaries}
-
-\include{glossary}
-
-\makeglossaries
-
-\begin{document}
-
-\title{Reinforcement Learning}
-\author{}
-\date{}
-\maketitle
-
-%\tableofcontents
-%\newpage
 
 These notes are made from studying the book by~\cite{sutton2018reinforcement}.
-More specifically, the reading path is Chapters 1--3, 6, 8--10. Furthermore, I
+More specifically, the reading path is Chapters 1-3, 6, 8-10. Furthermore, I
 have included a glossary of terms as they are used for reference as well as a
 symbol reference if necessary.
 
-\section{Overview}
+* Overview
 
 The aim of a reinforcement learning agent is to learn how to map situations to
 actions in order to maximise a numerical~(?) reward signal. This assumes that
@@ -52,71 +30,64 @@ agent. For example, agents that incorporate a camera to sense their environment
 may use a image understanding neural network that was trained using supervised
 learning. %Add better explained examples perhaps a diagram.
 
-RL tackles the problems it faces in a holistic
-way~(?) as agents are goal-seekers in an interactive, but uncertain
-environment. This means that one of the strengths of RL lies in the agent's
-ability to learn from its own experience despite operating in an environment
-outside of it's experience or previously observed sets of states. This ability
-to adapt in an uncertain environment is one of the main strengths and aims of
-Reinforcement Learning. However, as a goal-seeker the design~(?use) of explicit
-goals is imperative as it allows the agent to better judge its progress toward
-that goal.
+RL tackles the problems it faces in a holistic way~(?) as agents are
+goal-seekers in an interactive, but uncertain environment. This means that one
+of the strengths of RL lies in the agent's ability to learn from its own
+experience despite operating in an environment outside of it's experience or
+previously observed sets of states. This ability to adapt in an uncertain
+environment is one of the main strengths and aims of Reinforcement Learning.
+However, as a goal-seeker the design~(?use) of explicit goals is imperative as
+it allows the agent to better judge its progress toward that goal.
 
 It is important to note that when referring to reinforcement learning this can
 mean one of three things:
-\begin{enumerate}
-    \item A problem~(?)
-    \item Class of solution methods that work well on the problem
-    \item Field that studies the problem and its solution methods
-\end{enumerate}
+
+ + A problem~(?)
+ + Class of solution methods that work well on the problem
+ + Field that studies the problem and its solution methods
 
 In these notes, the terms are differentiated by referring to the field as just
 Reinforcement Learning the capitalised term, solutions as algorithms or agents,
 and problems as tasks or problems. The lowercase term ``reinforcement
 learning'' applies generally to all three definitions while prefixing the RL
-before a term is the same. 
+before a term is the same.
 
-\section{Elements of RL}
+
+* Elements of RL
 
 While the agent and the environment are the key objects for RL, there are also
 four different elements that enable an RL learning system to function:
-\begin{description}
-    \item[policy] is the mapping of states to actions to be perfomed in that
+    - policy ::  is the mapping of states to actions to be perfomed in that
         state
-    \item[reward signal] is the response of the environment to the agent for a
+    - reward signal ::  is the response of the environment to the agent for a
         given action in a state
-    \item[value function] is a way of measuring the long-term desirability of
+    - value function ::  is a way of measuring the long-term desirability of
         states taking into account the policy~(?)
-    \item[model] of the environment is an optional representation that can be
+    - model ::  of the environment is an optional representation that can be
         used for planning
-\end{description}
 
 The above definitions are quite broad and should only give one a sense of what
 their purpose is in RL an are not complete definitions.
 
-\subsection{Policy}
+** Policy
 
 Most important is the policy (typically denoted by $\pi$) as it alone is
 sufficient to determine behaviour of an agent. Furthermore, policies may be
-``good'' or ``bad'' in that certain sequences of actions will ultimately yield
+"good" or "bad" in that certain sequences of actions will ultimately yield
 less overall reward than others. This is why RL algorithms typically perform
 some kind of policy search in order to determine the optimal policy for an
 agent. Finally, a policy may also be stochastic in that it defines a
 probability distribution of actions to choose given a specific state. As
 opposed to a deterministic policy wherein the agent says ``given my current
 situation I will always choose this action'', an agent maintaining a
-stochastic policy says, ``given my current situation I will most probably do this''.
+stochastic policy says, "given my current situation I will most probably do this".
 
-\begin{figure}[ht]
-    \centering
-    \def\svgwidth{0.5\columnwidth}
-    \input{images/stochasticpolicyvis.pdf_tex}
-    \caption{Probability distribution for actions and states}\label{fig:stochasticpolicyvis}
-\end{figure}
+#+caption: Probability distribution for actions and states
+[[./images/rl/stochasticpolicyvis.svg]]
 
-\subsection{Reward vs. Value}
+** Reward vs. Value
 
-The terms \emph{reward signal} and \emph{value function} may seem closely
+The terms /reward signal/ and /value function/ may seem closely
 related, but are fundamentally different in how they are incorporated into RL
 algorithms. The reward signal defines the goal of a RL problem and is the
 primary basis for altering the policy. Since the agent attempts to maximise the
@@ -132,35 +103,20 @@ agent based on historical observations over its lifetime. As with policy
 search, value estimation is crucial in most RL algorithms with the aim to do so
 accurately and efficiently.
 
-\subsection{Models}
+** Models
 
 Broadly speaking, a model is a representation of some system that allows for
 the inference and prediction of the system to some degree of accuracy. For
 example, when Nicolaus Copernicus proposed the heliocentric model of the solar
 system, he was able to predict to a fair degree of accuracy the paths and
 orbits of the planets and when they would next appear in the night sky
-\emph{[CITATION NEEDED]}. With RL, a model can be used by an agent in order to
+/[CITATION NEEDED]/. With RL, a model can be used by an agent in order to
 plan actions or predict the possible result of a sequence of actions before
 performing it. However, the use of a model is optional. Methods involving a
-model are referred to as \emph{model-based} methods while those who do not are
-referred to as \emph{model-free} methods. Furthermore, there exists an entire
+model are referred to as /model-based/ methods while those who do not are
+referred to as /model-free/ methods. Furthermore, there exists an entire
 spectrum of methods from model-free to model-based including guided policy
 search (citation needed) (more examples needed). Typically, for problems in
 which no model exists or a model is too computationally expensive to use,
 model-free methods are used. For problems where accuracy matters, or the model
 is well known, model-based methods can be used for expedited learning.
-
-\bibliographystyle{acm}
-\bibliography{refs.bib}
-
-\appendix
-
-%
-% Glossaries
-%
-
-\glsaddall
-
-\printglossary[nonumberlist]
-
-\end{document}

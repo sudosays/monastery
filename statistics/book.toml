@@ -1,9 +1,0 @@
-[book]
-authors = ["Julius James Stopforth"]
-language = "en"
-multilingual = false
-src = "src"
-title = "statistics"
-
-[output.html]
-mathjax-support = true
