@@ -1,0 +1,304 @@
+% Created 2021-03-06 Sat 17:38
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Julius Stopforth}
+\date{\today}
+\title{Data Structures and Algorithms}
+\hypersetup{
+ pdfauthor={Julius Stopforth},
+ pdftitle={Data Structures and Algorithms},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Summary}
+\label{summary}
+\href{./about.md}{About these notes} -
+\href{./ch01-algorithms.md}{Algorithms} - \href{./ch01-01-graph\_algos.md}{Graph
+algorithms} - \href{./ch01-01-dijkstra.md}{Dijkstra} -
+\href{./ch01-02-sorting\_algos.md}{Sorting algorithms} -
+\href{./ch01-02-heapsort.md}{Heap sort} - \href{./ch02-data\_structures.md}{Data
+Structures}
+\section{About these notes}
+\label{sec:org96bf2f2}
+\section{Algorithms}
+\label{sec:org9c8dc44}
+\subsection{Graph algoritms}
+\label{sec:org1c1f1a7}
+\subsubsection{Djikstra's Algorithm}
+\label{sec:org29b3818}
+
+Finds the shortest distances from a source node in a graphs to all other
+nodes in the graph. The algorithm may be stopped early when seeking the
+shortest distance between two nodes only.
+
+For the purpose of illustration we will be using the problem of
+determining the most effective flights from my hometown airport in
+George, South Africa (blue) and Vancouver, Canada (red).
+
+\begin{figure}[htbp]
+\centering
+\includesvg[width=.9\linewidth]{./images/dsa/flightmap}
+\caption{Credit for the base map to \href{https://commons.wikimedia.org/wiki/User:Petr\_Dlouh\%C3\%BD}{Petr Dlouhý}}
+\end{figure}
+
+The possible flights we can choose from are listed below as well as a
+made up ``ugh'' score (a combination of the flight time and cost).
+
+\begin{center}
+\begin{tabular}{llr}
+From & To & Ugh\\
+\hline
+GRJ & CPT & 1\\
+GRJ & JHB & 2\\
+CPT & DXB & 9\\
+CPT & JFK & 22\\
+JHB & DXB & 10\\
+JHB & LHR & 17\\
+DXB & LHR & 8\\
+DXB & JFK & 14\\
+LHR & YVR & 9\\
+JFK & YVR & 8\\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item Implementations
+\label{sec:org3d41452}
+\begin{enumerate}
+\item Python
+\label{python}
+\begin{verbatim}
+  """
+  We could have used a tuple instead but this is for illustrative purposes
+  """
+  class Flight:
+      def __init__(self, destination, ugh):
+          self.destination = destination
+          self.ugh = ugh
+
+      def __str__(self):
+          return "-> %s (%d)" % (self.destination.name, self.ugh)
+
+  class Airport:
+
+      def __init__(self, name, flights=None):
+          self.name = name
+          self.flights = flights
+
+      def __str__(self):
+          output = self.name
+          if self.flights is not None:
+              output += ":"
+              for f in self.flights:
+                  output += "\n" + str(f) 
+
+          return output
+
+  def setup():
+
+      YVR = Airport("YVR")
+      LHR = Airport("LHR", flights=[Flight(YVR, 9)])
+      JFK = Airport("JFK", flights=[Flight(YVR, 8)])
+      DXB = Airport("DXB", flights=[Flight(JFK, 14), Flight(LHR, 8)])
+      JHB = Airport("JHB", flights=[Flight(LHR, 17), Flight(DXB, 10)])
+      CPT = Airport("CPT", flights=[Flight(JFK, 22), Flight(DXB, 9)])
+      GRJ = Airport("GRJ", flights=[Flight(CPT, 1), Flight(JHB, 2)])
+
+      return [GRJ, CPT, JHB, DXB, JFK, LHR, YVR]
+
+
+  def djikstras(airports, start, dest):
+      ughs = {}
+      prev = {}
+
+      for a in airports:
+          ughs[a] = float("inf")
+          prev[a] = None
+
+      ughs[start] = 0
+
+      visited = []
+      unvisited = ughs
+
+      while len(unvisited) > 0:
+          
+          current = min({airport:ugh for (airport, ugh) in 
+              filter(lambda t: t[0] not in visited, ughs.items())},
+              key=ughs.get)
+
+          visited.append(current)
+
+          if current == dest:
+              break
+
+          for f in current.flights:
+             
+              temp = ughs[current] + f.ugh
+              
+              if temp < ughs[f.destination]:
+             
+                  ughs[f.destination] = temp
+                  prev[f.destination] = current
+
+      return ughs, prev
+
+  if __name__ == "__main__":
+      
+      airports = setup()
+      
+      ughs, prev = djikstras(airports, airports[0], airports[-1]) 
+
+      flight_path = airports[-1].name
+      current = airports[-1]
+
+      while prev[current] is not None:
+          flight_path = prev[current].name + "->" + flight_path
+          current = prev[current]
+
+      print(flight_path)
+\end{verbatim}
+\end{enumerate}
+\end{enumerate}
+
+\subsection{Sorting algorithms}
+\label{sorting-algorithms}
+\subsubsection{Heapsort}
+\label{heapsort}
+For the purposes of learning the heapsort we will use the scenario of
+organising medical case file of a virus outbreak. Due to the immense
+strain on resources, these case files have been randomly entered into
+the system, but the medical staff now need all of the case files in
+chronological order so that they can build an accurate timeline of the
+virus spread.
+
+Luckily, the case files are keyed with a 17-digit case reference number
+that is constructed using the date, time, and a sequence number.
+
+\begin{verbatim}
+  0000 00 00 00 00 00 000
+
+  <year> <month> <day> <hour> <minute> <second> <sequence>
+\end{verbatim}
+
+Since the resources available are relatively constrained and it is time
+sensitive, we have chosen the heapsort because:
+\begin{itemize}
+\item it has a running complexity of \(O(n\log{}n)\)
+\item it sorts the records in place
+\end{itemize}
+
+Using a heapsort is interesting because it leverages a data structure
+(the heap) as opposed to an efficient method. Essentially, heapsort
+boils down to building the heap (\(O(n)\)), and \(n-1\) heapify
+operations (\(O(\log{}n)\) each) to do the final sort.
+
+\begin{enumerate}
+\item The Heap
+\label{sec:orgcc83b8c}
+\item Pseudocode
+\label{sec:org8b6ef48}
+\item Implementations
+\label{implementations}
+\end{enumerate}
+\subsubsection{Python}
+\label{python}
+\begin{verbatim}
+  class Heap:
+
+      def __init__(self, array, heap_size=-1):
+          self.array = array
+          self.heap_size = heap_size
+
+      def __str__(self):
+          return str(self.array)
+
+      def left_of(index):
+          return (2*index + 1)
+
+      def right_of(index):
+          return (2*index + 2)
+
+      def _swap(self, a, b):
+          self.array[a], self.array[b] = self.array[b], self.array[a]
+
+      def _max_heapify(self, index):
+          left = Heap.left_of(index)
+          right = Heap.right_of(index)
+
+          largest = index
+
+          if left < self.heap_size:
+              if self.array[left] > self.array[largest]:
+                  largest = left
+
+          if right < self.heap_size:
+              if self.array[right] > self.array[largest]:
+                  largest = right
+
+          if largest != index:
+              self._swap(largest, index)
+              self._max_heapify(largest)
+          else:
+              return
+
+      def _build_max_heap(self):
+          self.heap_size = len(self.array)
+
+          for i in range(self.heap_size//2, -1, -1):
+              self._max_heapify(i)
+
+      def sort(self):
+          self._build_max_heap()
+
+          for i in range(len(self.array)-1,0,-1):
+              self._swap(i,0)
+              self.heap_size -= 1
+              self._max_heapify(0)
+
+  if __name__ == "__main__":
+
+      case_numbers = [
+          20200127223412001,
+          20200212000201001,
+          20200128141212003,
+          20200205130501001,
+          20200204221331001,
+          20200126161212001,
+          20200206184812001,
+          20200131200531002,
+          20200128134516001,
+          20200125103945001,
+          20200128134612002,
+          20200131144454001
+      ]
+
+      h = Heap(case_numbers)
+
+      h.sort()
+
+      print(h)
+\end{verbatim}
+
+
+\section{Data Structures}
+\label{sec:org8f4f571}
+\end{document}

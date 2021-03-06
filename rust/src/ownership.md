@@ -1,3 +1,0 @@
-# Ownership in Rust
-
-
