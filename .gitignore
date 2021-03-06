@@ -5,3 +5,5 @@ build/
 venv
 .auctex-auto
 auto/
+*.tex
+*.odt

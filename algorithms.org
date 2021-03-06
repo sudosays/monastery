@@ -1,4 +1,5 @@
 #+title: Data Structures and Algorithms
+#+OPTIONS: author:nil date:nil
 
 * About these notes
 
