@@ -1,9 +1,94 @@
 #+title: Robotics
+#+options: author:nil date:nil
 
 * Control Systems
 
 ** PID Controllers
 
+[[https://www.youtube.com/watch?v=sFqFrmMJ-sg][RealPars: What is a PID Controller? (video)]]
+
+#+caption: [[http://commons.wikimedia.org/wiki/File:PID.svg, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=17633925][By Arturo Urquizo]]
+[[./images/robotics/PID_en.svg]]
+
+Definition: Proportional, Integral, Derivative controller
+
+#+caption: Optimal signal damping of PID controller
+[[./images/robotics/pid_optimal.svg]]
+
+Terms:
+- Process Variable (PV) :: measured/sensor value
+- Set Point (SV/SP) :: target value
+
+PID controllers can work as on-off controllers to regulate between two acceptable values around the set-point. Tightening the min/max band and feedback time can get the value closer to optimal/set-point.
+
+[[https://www.youtube.com/watch?v=IB1Ir4oCP5k][RealPars: How to Tune a PID Controller (video)]]
+
+
+PID Parameters:
+- Error (E) :: Difference between setpoint and process variable (SP-PV)
+- Proportional (P)
+
+Each parameter of P, I, and D is multiplied by the error.
+
+Most widely used tuning method: trial & error (lol)
+
+*** Propotional
+
+Also known as:
+- proportional gain
+- gain
+- Proportional band (when expressed as a percent)
+- K_p
+
+Determines how fast the system responds (rise time?).
+
+Higher gain (lower proportional band) means more sensitive/less stable loops.
+
+*** Integral
+
+AKA:
+- reset
+- K_i
+- T_i = (1/K_i)
+
+can be measured in:
+- repeats/sec
+- repeats/min
+- sec/repeat
+- min/repeat
+
+sum of all PV values recorded from the signal within a set time
+
+*** Derivative
+Usually measured in seconds or minutes.
+
+Predicting change.
+
+Tuning this parameter means setting how far ahead to try predict change.
+
+PV must be a very clean signal for derivative to work properly.
+.: PI controllers are much more common
+
+*** Tuning method (basic)
+
+1. Increase Gain (P) by double until oscillation occurs (disable I,D)
+2. Set Gain at 50% of value at which oscillation started
+3. Increase I by double until oscillation occurs in PV
+4. Set I at 50% of value at which oscillation started
+5. Fine-tune parameters further by small increments
+
+TODO Deeper notes from link below
+[[https://en.wikipedia.org/wiki/PID_controller][Source: Wikipedia PID article]]
+
+
+
+
 ** LQR Controllers
 
 ** Kalman Filters
+
+* Software
+
+** ROS
+
+** Gazebo
