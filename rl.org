@@ -55,6 +55,7 @@ before a term is the same.
 
 * Elements of RL
 
+
 While the agent and the environment are the key objects for RL, there are also
 four different elements that enable an RL learning system to function:
     - policy ::  is the mapping of states to actions to be perfomed in that
@@ -120,3 +121,23 @@ search (citation needed) (more examples needed). Typically, for problems in
 which no model exists or a model is too computationally expensive to use,
 model-free methods are used. For problems where accuracy matters, or the model
 is well known, model-based methods can be used for expedited learning.
+
+* Deep Reinforcement Learning
+
+Using deep learning structures to represent policies and other things
+
+** Algorithms
+
+
+*** Continuous Action Space
+**** DDPG: Deep Deterministic Policy Gradient
+
+**** PPO: Proximal Policy Optimisation
+
+**** TRPO: Trust Region Policy Optimisation
+
+*** Discrete Action Space
+
+**** DQN: Deep Q-Network
+
+** Robotic control with Deep Reinforcement Learning
