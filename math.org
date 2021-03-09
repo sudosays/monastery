@@ -1,0 +1,6 @@
+#+title: Mathematics
+#+options: author:nil date:nil
+
+* List of Books
+
++ [[https://www.gutenberg.org/ebooks/13309][A First Book in Algebra by Wallace C. Boyden]]
