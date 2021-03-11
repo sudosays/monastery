@@ -1,0 +1,20 @@
+#+title: Unix Tips & Tricks
+#+options: author:nil date:nil
+
+* Rsync
+
+Rsync is a useful utility for synchronising files and dir contents (remotely or locally)
+
+The basic format of the command is ~rsync source destination~ where it will try to ensure that the ~destination~ looks like the ~source~.
+
+For remote/ssh rsync the above format still applies but the remote location is specified as ~user@server:destination~
+
+Examples:
+
+1) Make remote look like local:
+
+   #begin_example
+   rsync -r ~/local/ alice@example.com:~/local/
+   #end_example
+
+   The ~-r~ flag is for recursing into directories. /Note that the trailing slash on the directories is important to ensure that rsync understands that the directory is being compared to a directory./
