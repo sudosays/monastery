@@ -7,6 +7,9 @@
 
 *** Flight dynamics
 
+*** PID Control of Quads
+
+[[https://www.hindawi.com/journals/tswj/2014/280180/][A Simple Attitude Control of Quadrotor Helicopter Based on Ziegler-Nichols Rules for Tuning PD Parameters (Paper)]]
 
 
 * Control Systems

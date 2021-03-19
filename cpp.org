@@ -1,0 +1,19 @@
+#+title: C++ Programming Language
+#+options: author:nil date:nil
+
+* Introduction
+
+C++ is a powerful language. It started as an object-oriented version of C, but has mutated to include much, much more.
+
+The [[*Standard Template Library (STL)][Standard Template Library (STL)]] makes it a favourite for competitive programming.
+
+* Compilation
+
+** Using ~g++~
+#+begin_example
+g++ source.cpp
+#+end_example
+
+** Using CMAKE
+
+* Standard Template Library (STL)
