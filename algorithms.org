@@ -25,16 +25,16 @@ made up "ugh" score (a combination of the flight time and cost).
 
 | From | To  | Ugh |
 |------+-----+-----|
-| GRJ  | CPT | 1   |
-| GRJ  | JHB | 2   |
-| CPT  | DXB | 9   |
-| CPT  | JFK | 22  |
-| JHB  | DXB | 10  |
-| JHB  | LHR | 17  |
-| DXB  | LHR | 8   |
-| DXB  | JFK | 14  |
-| LHR  | YVR | 9   |
-| JFK  | YVR | 8   |
+| GRJ  | CPT |   1 |
+| GRJ  | JHB |   2 |
+| CPT  | DXB |   9 |
+| CPT  | JFK |  22 |
+| JHB  | DXB |  10 |
+| JHB  | LHR |  17 |
+| DXB  | LHR |   8 |
+| DXB  | JFK |  14 |
+| LHR  | YVR |   9 |
+| JFK  | YVR |   8 |
 
 **** Implementations
 ***** Python

@@ -3,9 +3,11 @@
 
 * Introduction
 
-C++ is a powerful language. It started as an object-oriented version of C, but has mutated to include much, much more.
+C++ is a powerful language. It started as an object-oriented version of C, but
+has mutated to include much, much more.
 
-The [[*Standard Template Library (STL)][Standard Template Library (STL)]] makes it a favourite for competitive programming.
+The [[*Standard Template Library (STL)][Standard Template Library (STL)]] makes it a favourite for competitive
+programming.
 
 * Compilation
 
@@ -14,6 +16,33 @@ The [[*Standard Template Library (STL)][Standard Template Library (STL)]] makes 
 g++ source.cpp
 #+end_example
 
+Produces the file ~a.out~ which can be run.
+
 ** Using CMAKE
 
 * Standard Template Library (STL)
+
+* Speeding Up Input For Competitive Programming
+
+The following is a popular "hack" floating around for supposedly speeding up
+getting input in C++ programs:
+#+begin_src cpp
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
+#+end_src
+
+The line ~cin.tie(NULL)~ says that ~std::cout~ and ~std::cin~ should be
+uncoupled from each other. This is acceptable in our use case for competitive
+programming because typically the input and output buffers are separate. If you
+wanted user input, you would want your prompts delivered via ~cout~ to be
+delivered/visible before awating user input from ~cin~. In the competitive
+programming scenario, it is fine if we buffer inputs and outputs, and that they
+are not synchronous.
+
+The line ~ios_base::sync_with_stdio(false)~ specifies that we do not want to
+synchronise the C and C++ io. This is also perfectly fine, because we are not
+expecting to interleave our C++ code with C code. Instead, we can safely assume
+that we will be using "pure" C++ throughout.
+
+These two lines produce a "speedup" in that we are removing the restrictions on
+io sync/blocking both in the C interop and out/in sense.

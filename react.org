@@ -1,0 +1,45 @@
+#+title: React Notes
+#+options: author:nil date:nil
+
+
+ List of Materials
+
++ [[https://reactjs.org/docs/getting-started.html#learn-react][Learn React Docs]]
++ [[https://reactjs.org/docs/thinking-in-react.html][Thinking in React]]
+
+* Progressive Web Apps (PWAs)
+
+Source(s):[[https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps][PWAs (MDN Web Docs)]],[[https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Developer_guide][PWA Developer guide (MDN Web Docs)]]
+
+In order to deliver a cross-platform, native-like experience one can use a progressive web app design pattern.
+
+The requirements for a PWA are as follows:
++ a secure context (HTTPS)
+  - Many features such as geolocation will be unavailable unless the app is loaded using HTTPS
++ a service worker (js typically)
+  - Intercepts network requests and handles caching for speeding up load times
++ a manifest file (JSON)
+  - Controls how the app is presented on the user's system including icon, name etc
+
+** Service Workers
+
+We want to have a list of all the files to cache
+
+* Deployment
+
+A good site for continuous deployment is netlify.
+
+My git strategy is to have the deployment on the master/main branch and then my "hot" devel branch.
+
+This way I can hack away locally and when I want to deploy, I can merge into the master branch and push.
+
+The steps are as follows
+
+1. Make changes on ~devel~ branch
+2. Run ~npm run build~ and check for compiler complaints
+3. Fix any complaints
+4. Push commits and create PR
+5. Check netlify status on PR (deploy preview, tests etc.)
+6. MErge PR into ~master~ to deploy.
+
+* Appendix: Using Bulma CSS

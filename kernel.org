@@ -1,0 +1,18 @@
+#+title: Linux Kernel Hacking
+#+options: author:nil date:nil
+
+Sources used:
++ [[https://kernelnewbies.org/OutreachyfirstpatchSetup][Kernel Newbies Outreachy]]
+
+* Style guide
+
++ C89 style/standard
++ Tabs not spaces
++ Tabwidth == 8
++ Do not go deeper than 2 levels (otherwise consider shipping code out to a function)
+
+* Log
+
+Archlinux gives an error such as kheaders_data.tar.gz not found. This can be
+fixed by installing cpio See this
+thread:[[https://bbs.archlinux.org/viewtopic.php?id=261876][https://bbs.archlinux.org/viewtopic.php?id=261876]]

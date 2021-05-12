@@ -1,11 +1,12 @@
 #+title: Notes on Structure and Interpretation of Computer Programs
 #+OPTIONS: author:nil date:nil
 
-#+begin_src scheme 
-(+ 2 4)
+The following notes have been made by following the [[http://sarabander.github.io/sicp/][unofficial web version]].
+
+Furthermore, it is recommended to read these notes in Emacs as the program
+snippets are executable if you have a scheme compiler installed.
+
+#+begin_src scheme :results nil
+(+ 486 1)
 #+end_src
-
-#+RESULTS:
-: #<unspecified>
-
 
