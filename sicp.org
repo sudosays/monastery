@@ -6,7 +6,14 @@ The following notes have been made by following the [[http://sarabander.github.i
 Furthermore, it is recommended to read these notes in Emacs as the program
 snippets are executable if you have a scheme compiler installed.
 
-#+begin_src scheme :results nil
-(+ 486 1)
-#+end_src
+#+BEGIN_SRC scheme :results output
+(+ 2 2)
+#+END_SRC
 
+#+RESULTS:
+:
+: ;Unexpected read restart on: #[textual-i/o-port 38 for console]
+: ;To continue, call RESTART with an option number:
+: ; (RESTART 1) => Return to read-eval-print level 1.
+:
+: 2 error>

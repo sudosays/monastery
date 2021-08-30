@@ -702,3 +702,18 @@ shadowed, it will use the unshadowed constant. See the example below.
 The following will first print ~200000~ followed by ~100000~ since the
 function ~print_points~ makes use of the globally scoped constant and
 not the locally scoped constant.
+
+
+* Extras
+
+** Rust + WASM
+For this we make use of the ~wasm-pack~ tool as well as the ~wasm-bingen~ crate.
+
+To use ~wasm-bindgen~ we decorate our functions etc with the ~#[wasm_bindgen]~.
+
+It is also important to specify that it is a lib type of "cdylib" or a dynamically linked lib.
+
+Building the rust-wasm project uses ~wasm-pack~:
+#+begin_src
+wasm-pack build --target web
+#+end_src

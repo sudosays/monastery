@@ -1,6 +1,13 @@
 #+title: Mathematics
 #+options: author:nil date:nil
 
-* List of Books
+* List of Resources
+
+For good bookshelves to browse check out the following links:
++ [[https://aimath.org/textbooks/approved-textbooks/][American Institute of Mathematics: Approved Textbooks]]
++ [[https://www.gutenberg.org/ebooks/bookshelf/102][Project Gutenberg: Mathematics Bookshelf]]
 
 + [[https://www.gutenberg.org/ebooks/13309][A First Book in Algebra by Wallace C. Boyden]]
++ [[https://www.people.vcu.edu/~rhammack/BookOfProof/][Book of Proof by Richard Hammack]]
+
+* Set Theory

@@ -20,3 +20,7 @@ They are all in the org format. You may either read them as is, or get you an Em
 
 If you would like to add your own notes, please fork this repository and remember to append yourself as an author on all docs.
 
+** Current focus
+
+| Topic            | Last checkpoint                               |
+| Math: Set Theory | Book of Proof - Richard Hammack § 1.3 Subsets |
