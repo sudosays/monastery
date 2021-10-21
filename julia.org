@@ -1,0 +1,69 @@
+#+title: Julia Programming Language
+
+Motivation: Learning a scientific computing oriented programming language.
+Docs: [[https://docs.julialang.org/en/v1/][Julia documentation (online)]]
+
+* Learning Path
++ [[https://juliaacademy.com/p/intro-to-julia][Introduction to Julia (for programmers)]]
++ [[https://juliaacademy.com/p/julia-for-data-science][Julia for Data Science]]
++ [[https://juliaacademy.com/p/introduction-to-machine-learning][Foundations of Machine Learning]]
+
+* Course: Introduction to Julia
+
+** Basics
+
+Outline:
++ Printing
++ Variable Assignment
++ Comments
++ Basic math syntax
+
+The ~println()~ function used to print. Pretty straightforward.
+
+#+begin_src julia :results output
+println("Hello, world!")
+#+end_src
+
+#+RESULTS:
+: Hello, world!
+
+Variable assignment is also pretty straightforward.
+As a /dynamic/ language, julia types are determined on the fly and can be inspected with ~typeof()~.
+
+#+begin_src julia :results output
+secret_number = 42
+typeof(secret_number)
+#+end_src
+
+#+RESULTS:
+: 42
+: Int64
+
+Basic types encounterd so far:
++ Int64
++ Float64
++ String
+
+Emojis are perfectly valid variable names (implying unicode compatibility?)
+
+Comments are left with ~#~, and multi-line comments are wrapped in ~#= ... =#~
+
+Basic math operators:
++ ~+~ addition
++ ~-~ subtraction
++ ~*~ multiplication
++ ~/~ division
++ ~^~ power
++ ~%~ modulus
+
+~convert(T, x)~ function is very useful for changing types
+
+~@assert~ statements can be very useful to add checking/tests to code.
+
+#+begin_src julia :results output
+num = 1
+# We expect this assertion to fail
+@assert num > 1
+#+end_src
+
+[[https://juliaacademy.com/courses/375479/lectures/5745676][Next lesson]]

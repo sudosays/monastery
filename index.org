@@ -13,6 +13,7 @@ directly to that section in the literature or browse the entire notebook.
 + C++
 + Golang
 + Rust
++ [[file:julia.org][Julia]]
 
 ** Application Development Frameworks
 
