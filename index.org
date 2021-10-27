@@ -5,26 +5,21 @@ directly to that section in the literature or browse the entire notebook.
 
 * By Topic
 ** Artificial Intelligence
-
-+ Reinforcement Learning
-
++ [[file:rl.org][Reinforcement Learning]]
 ** Programming Languages
-
-+ C++
-+ Golang
-+ Rust
++ [[file:cpp.org][C++]]
++ [[file:golang.org][Golang]]
++ [[file:rust.org][Rust]]
 + [[file:julia.org][Julia]]
-
 ** Application Development Frameworks
-
-+ React
-+ Android
-
++ [[file:react.org][React]]
++ [[file:android.org][Android]]
++ [[file:django.org][Django]]
 ** Other
-+ Linux Kernel development
-+ Unix systems
-+ Algorithms and Data Structures
-+ Notes on SICP
++ [[file:kernel.org][Linux Kernel development]]
++ [[file:unix.org][Unix systems]]
++ [[file:algorithms.org][Algorithms and Data Structures]]
++ [[file:sicp.org][Notes on SICP]]
 * By Dewey System
 ** 000 - Computer Science
 
@@ -34,5 +29,4 @@ directly to that section in the literature or browse the entire notebook.
 + Algorithms
 + Statistics
 ** 620 - Engineering
-
-+ Robotics
++ [[file:robotics.org][Robotics]]

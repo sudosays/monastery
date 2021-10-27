@@ -1,0 +1,67 @@
+#+title: Django
+
+Projects in Django are acutally python packages with the following
+conventions:
++ urls.py
++ settings.py
+
+Using manage.py removes need to manually create subdirs etc.
+
+Proj. vs. Apps
+
+"What's the difference between a project and an app? An app is a Web
+application that does something -- e.g., a Weblog system, a database of
+public records or a simple poll app. A project is a collection of
+configuration and apps for a particular website. A project can contain
+multiple apps. An app can be in multiple projects."
+
+Django project/app setup:
+1. ~django-admin startproject~
+2. ~cd~
+3. ~python manage.py~
+
+creating app in same dir as manage py allows for it to not be imported
+as submodule of project.
+
+App structure:
++ admin.py
++ apps.py
++ models.py
++ tests.py
++ views.py
+
+** Creating views
+
+requires HttpResponse for simple views
+
+define new view function in views.py that returns httpresponse given a
+request var.
+
+map to view in the urls.py file using regex. If it is the first view of
+the app then it needs to be created.
+
+this looks like
+#+begin_src python
+from django.urls import path from [.,]
+import views
+
+urlpatterns = [ path('',views.index, name='index'),]
+#+end_src
+
+Remember that this will need to be added to the main project urls in
+order to have an entrypoint into the app!
+
+in project mysite's urls.py:
+
+#+begin_src python
+from django.contrib import admin from django.urls import
+include, path
+
+urlpatterns = [ path('polls/', include('polls.urls')), path('admin/',
+admin.site.urls),]
+#+end_src
+
+the include() func allows importing of another apps url confs by
+chopping off the URL up to that point and sending the remainder for
+processing by the app's URL handling. This allows for the app to only
+have to do it's own processing without worrying about full paths.
