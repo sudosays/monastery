@@ -3,19 +3,20 @@
 
 * Summary
 
-[[./intro.md][Introduction]] - [[./learning_path.md][Learning Path]] -
-[[./hello_world.md][Hello World!]] - [[./println.md][The ~println!~
-Macro]]
+[[./intro.md][Introduction]]
++ [[./learning_path.md][Learning Path]]
++ [[./hello_world.md][Hello World!]]
++ [[./println.md][The ~println!~ Macro]]
++ [[./cargo.md][Cargo]]
++ [[./data_types.md][Data Types]]
++ [[./vars_consts.md][Variables and Constants]]
++ [[./loops.md][Loops!]]
++ [[./read_stdio.md][Reading from ~stdio~]]
++ [[./match_exprs_comparators.md][Match Expressions and Comparators]]
++ [[./results_errors.md][Result Types and Error Handling]]
++ [[./assoc_func.md][Associated Functions]]
+[[./documentation.md][Reading the Documentation]]
 
-- [[./cargo.md][Cargo]]
-- [[./data_types.md][Data Types]]
-- [[./vars_consts.md][Variables and Constants]]
-- [[./loops.md][Loops!]]
-- [[./read_stdio.md][Reading from ~stdio~]]
-- [[./match_exprs_comparators.md][Match Expressions and Comparators]]
-- [[./results_errors.md][Result Types and Error Handling]]
-- [[./assoc_func.md][Associated Functions]]
-  [[./documentation.md][Reading the Documentation]]
 * Introduction
 
 These notes are made from studying this
@@ -27,8 +28,7 @@ This is a checklist/learning path of things I want to do with Rust.
 
 Resources used:
 
-- [[https://doc.rust-lang.org/book/][The Rust Programming Language Book
-  (online)]]
+- [[https://doc.rust-lang.org/book/][The Rust Programming Language Book (online)]]
 
 Rust Book:
 
@@ -469,13 +469,13 @@ A match expression is similar to a switch statement in other languages
 and will check the value against its /arms/ and then execute the
 appropriate code. For example:
 
-#+begin_example
+#+begin_src rust
   match numbera.cmp(&numberb) {
       Ordering::Less => println!("Number A < Number B"),
       Ordering::Greater => println!("Number A > Number B"),
       Ordering::Equal => println!("Number A = Number B"),
   }
-#+end_example
+#+end_src
 
 However, match expressions are much more powerful than simple switch
 statements and can be used to ensure that you are handling a whole
@@ -491,13 +491,13 @@ expression become the types ~Ok~ and ~Err~.
 For example, trying to parse a string into an integer you can use the
 following:
 
-#+begin_example
+#+begin_src rust
   let five = "a 5"
   let five: u32 = match five.trim().parse() {
       Ok(num) => num,
       Err(_) => { //do something },
   }
-#+end_example
+#+end_src
 
 The underscore is a wildcard that will match any value, but not bind to
 it (meaning you won't be able to use the underscore in an expression).
@@ -514,10 +514,10 @@ braces within the string. These placeholders then get replaced with the
 value of the supplied variables in the order in which they appear. For
 example:
 
-#+begin_example
+#+begin_src
   println!("This is placeholder {}, {}", 1, 2);
   // outputs "This is placeholder 1, 2"
-#+end_example
+#+end_src
 
 ** Marco not function
 
@@ -564,20 +564,20 @@ is achieved by using the ~let~ keyword. Should you want a mutable
 variable you add the ~mut~ keyword after ~let~ but before the variable
 name. For example:
 
-#+begin_example
+#+begin_src rust
   let steadfast = true; //immutable
 
   let mut wavering = true; //mutable
   wavering = false;
-#+end_example
+#+end_src
 
 Similarly, references are also immutable by default.
 
-#+begin_example
+#+begin_src rust
   &wavering // immutable
 
   &mut wavering // mutable
-#+end_example
+#+end_src
 
 It is important in Rust to be judicious in the use of mutability. There
 are trade-offs to be made with respect to efficiency, debugging, code
@@ -594,9 +594,9 @@ avoids any unwanted mutability.
 A specific type for a variable can be denoted using the ~:~ syntax. For
 example declaring a unsigned 32-bit integer looks something like this:
 
-#+begin_example
+#+begin_src rust
   let x: u32 = 1
-#+end_example
+#+end_src rust
 
 ** Variable Shadowing
 
@@ -623,10 +623,10 @@ trailing whitespace is removed before attempting to parse an integer.
 For example converting the string ~five ~ "5"= to an integer you can do
 the following.
 
-#+begin_example
+#+begin_src rust
   let five: u32 = five.trim().parse()
       .expect("Failed to parse string!")
-#+end_example
+#+end_src rust
 
 ** Constants
 
@@ -644,9 +644,9 @@ of a function or another any value that is computed at runtime.
 Rust convention is to name constants with all uppercase and underscores
 between words.
 
-#+begin_example
+#+begin_src rust
   const MAX_POINTS: u32 = 100_000;
-#+end_example
+#+end_src
 
 *** Scope & Shadowing
 
@@ -660,7 +660,7 @@ name was instead interpreted as a constant pattern. This does not apply
 to shadowing a constant with a constant in a different scope as can be
 seen below.
 
-#+begin_example
+#+begin_src rust
   const MAX_POINTS: u32 = 100_000;
 
   fn main() {
@@ -670,7 +670,7 @@ seen below.
       println!("{}", MAX_POINTS);
 
   }
-#+end_example
+#+end_src
 
 The following code will print ~200000~ although the compiler will warn
 that the outer scoped ~MAX_POINTS~ is unused.
@@ -680,7 +680,7 @@ they are declared in. For example, if we had a function that makes use
 of our constant and then call in in a scope where the constant was
 shadowed, it will use the unshadowed constant. See the example below.
 
-#+begin_example
+#+begin_src rust
   const MAX_POINTS: u32 = 100_000;
 
   fn main() {
@@ -697,7 +697,7 @@ shadowed, it will use the unshadowed constant. See the example below.
       println!("{}", MAX_POINTS);
 
   }
-#+end_example
+#+end_src
 
 The following will first print ~200000~ followed by ~100000~ since the
 function ~print_points~ makes use of the globally scoped constant and
@@ -714,6 +714,6 @@ To use ~wasm-bindgen~ we decorate our functions etc with the ~#[wasm_bindgen]~.
 It is also important to specify that it is a lib type of "cdylib" or a dynamically linked lib.
 
 Building the rust-wasm project uses ~wasm-pack~:
-#+begin_src
+#+begin_src shell
 wasm-pack build --target web
 #+end_src
