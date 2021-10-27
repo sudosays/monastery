@@ -8,6 +8,21 @@ Docs: [[https://docs.julialang.org/en/v1/][Julia documentation (online)]]
 + [[https://juliaacademy.com/p/julia-for-data-science][Julia for Data Science]]
 + [[https://juliaacademy.com/p/introduction-to-machine-learning][Foundations of Machine Learning]]
 
+** Making Julia Work With Jupyter Notebook
+
+In a Julia shell/REPL:
+
+#+begin_src julia
+using Pkg
+
+Pkg.add("IJulia")
+Pkg.build("IJulia")
+# Use the following to uninstall
+# Pkg.rm("IJulia")
+#+end_src
+
+
+
 * Course: Introduction to Julia
 
 ** Basics
@@ -67,3 +82,10 @@ num = 1
 #+end_src
 
 [[https://juliaacademy.com/courses/375479/lectures/5745676][Next lesson]]
+
+* Performance Enhancement
+
+There is a really good documentation page outlining the possible performance enhancements and considerations:
+[[https://docs.julialang.org/en/v1/manual/performance-tips/][Julia Docs: Performance Tips]]
+
+The ~@time~ macro can list the number of allocations and time taken for a particular function/operation.
