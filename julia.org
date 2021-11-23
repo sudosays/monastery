@@ -81,11 +81,177 @@ num = 1
 @assert num > 1
 #+end_src
 
-[[https://juliaacademy.com/courses/375479/lectures/5745676][Next lesson]]
+*** Strings
+
+Julia strings are created either with one pair of double quotes ~" "~ or ~""" """~
+
+The second form allows for double quotation marks within the string.
+
+Single quotes ~' '~ denote chars.
+
+The ~$~ sign allows the insertion of variables or expressions into strings.
+
+#+begin_src julia :results output
+x = 1
+y = 2
+
+println("The slope where x=$x and y=$y is $(x/y)")
+#+end_src
+
+#+RESULTS:
+: 1
+: 2
+: The slope where x=1 and y=2 is 0.5
+
+3 ways to concat strings:
+1. The ~string()~ function accepts mixed types.
+#+begin_src julia :results output
+string("there are ", 42, " numbers in the answer")
+#+end_src
+
+#+RESULTS:
+: "there are 42 numbers in the answer"
+2. Using the ~*~ operator.
+#+begin_src julia :results output
+str1 = "My name is "
+str2 = "Jeff"
+str1*str2
+#+end_src
+
+#+RESULTS:
+: "My name is Jeff"
+
+3. Using another template string.
+#+begin_src julia :results output
+str1 = "See you, "
+str2 = "space cowboy"
+"$str1$str2"
+#+end_src
+
+#+RESULTS:
+: "See you, "
+: "space cowboy"
+: "See you, space cowboy"
+
+*** Data Structs
+
+3 types:
++ Dictionaries
++ Tuples
++ Arrays
+
+Mutable => Arrays, Dicitonaries
+Ordered data => Tuples, Arrays
+
+_Dictionaries_ are created with ~Dict()~.
+
+They can either be immediately filled with information, or added to later.
+
+*Note*: Instantiating with ~Dict()~ creates a dictionary of type ~Dict{Any,
+Any}()~ that persists after keys/entries have been made. However, specifying
+entries at creation allows the types to be inferred. Might be useful when
+[[* Performance Enhancement][checking performance]].
+
+#+begin_src julia :results output
+phonebook = Dict("Yarlgb" => "555-2323", "Cthulhu" => "666-6666")
+typeof(phonebook)
+#+end_src
+
+#+RESULTS:
+: Dict{String, String} with 2 entries:
+:   "Cthulhu" => "666-6666"
+:   "Yarlgb" => "555-2323"
+: Dict{String, String}
+
+#+begin_src julia :results output
+products = Dict()
+products["Necronomicon"] = "book"
+typeof(products)
+#+end_src
+
+#+RESULTS:
+: Dict{Any, Any}()
+: "book"
+: Dict{Any, Any}
+
+If the key does not exists when just accessing, it raises a ~KeyError~.
+
+Values can be popped from a dictionary by using ~pop!~.
+
+Standard array-style indexing does not work because dictionaries are /unordered/.
+
+_Tuples_ are declared using a pair of parentheses ~( )~ and are immutable once
+declared.
+
+*NB!* Data structures in Julia are 1-indexed, not 0-indexed.
+
+#+begin_src julia :results output
+houses = ("atreides", "harkonnen", "corrino")
+houses[1]
+houses[2] = "stupid" # not allowed
+#+end_src
+
+#+RESULTS:
+: ("atreides", "harkonnen", "corrino")
+: "atreides"
+
+_Arrays_ in Julia are both ordered and mutable and are declared with square
+brackets ~[ ]~.
+
+The type will automatically be inferred when the array is created, but
+mixed-type arrays are allow as well. They will be of type ~Array{Any, 1}~ or
+~Vector{Any}~.
+
+Since arrays are mutable, we can access and mutate with the square bracket syntax.
+
+Use both ~push!(array, elem...)~ and ~pop!~ to manipulate the array as well.
+
+Multi-dimensional ragged mixed-type arrays are allowed as well. Inner elements
+can be any data structure.
+
+The ~rand()~ function creates arrays filled with random numbers based on the arguments.
+
+#+begin_src julia :results output
+rand(2,2)
+rand(2,2,2)
+rand(2,2,2,2)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+2×2 Matrix{Float64}:
+ 0.409103  0.970342
+ 0.69213   0.706064
+2×2×2 Array{Float64, 3}:
+[:, :, 1] =
+ 0.200979   0.42964
+ 0.0933593  0.998476
+
+[:, :, 2] =
+ 0.00958637  0.517067
+ 0.58004     0.791069
+2×2×2×2 Array{Float64, 4}:
+[:, :, 1, 1] =
+ 0.569958  0.403903
+ 0.986525  0.823718
+
+[:, :, 2, 1] =
+ 0.0430723  0.849766
+ 0.768398   0.49614
+
+[:, :, 1, 2] =
+ 0.162715    0.77714
+ 0.00861398  0.688004
+
+[:, :, 2, 2] =
+ 0.167304   0.789634
+ 0.0943444  0.352217
+#+end_example
+
+[[https://juliaacademy.com/courses/375479/lectures/33244123][Next Lesson]]
 
 * Performance Enhancement
-
-There is a really good documentation page outlining the possible performance enhancements and considerations:
-[[https://docs.julialang.org/en/v1/manual/performance-tips/][Julia Docs: Performance Tips]]
+There is a really good documentation page outlining the possible performance
+enhancements and considerations: [[https://docs.julialang.org/en/v1/manual/performance-tips/][Julia Docs: Performance Tips]]
 
 The ~@time~ macro can list the number of allocations and time taken for a particular function/operation.

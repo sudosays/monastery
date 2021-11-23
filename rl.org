@@ -141,3 +141,7 @@ Using deep learning structures to represent policies and other things
 **** DQN: Deep Q-Network
 
 ** Robotic control with Deep Reinforcement Learning
+
+** Hyperparameter Optimisation
+
+Investigation: Using Bayesian Optimisation for Hyperparameter tuning of OpenAI Baselines on Gym envs
