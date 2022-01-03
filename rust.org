@@ -717,3 +717,5 @@ Building the rust-wasm project uses ~wasm-pack~:
 #+begin_src shell
 wasm-pack build --target web
 #+end_src
+
+Current tutorial page [[https://rustwasm.github.io/docs/book/game-of-life/rules.html][Rust Wasm tutorial]]
