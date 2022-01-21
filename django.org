@@ -1,6 +1,6 @@
 #+title: Django
 
-Projects in Django are acutally python packages with the following
+Projects in Django are actually python packages with the following
 conventions:
 + urls.py
 + settings.py
@@ -18,9 +18,9 @@ multiple apps. An app can be in multiple projects."
 Django project/app setup:
 1. ~django-admin startproject~
 2. ~cd~
-3. ~python manage.py~
+3. ~python manage.py~ #TODO: Add more notes?
 
-creating app in same dir as manage py allows for it to not be imported
+Creating app in same dir as ~manage.py~ allows for it to not be imported
 as submodule of project.
 
 App structure:
