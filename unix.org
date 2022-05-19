@@ -1,6 +1,20 @@
 #+title: Unix Tips & Tricks
 #+options: author:nil date:nil
 
+* Config files (Dotfiles)
+
+multiple DE config with .xprofile
+
+What to start in it:
++ emacs daemon/server
++ SSh agent
+
+Leave DE specific configs in the DE's config
+Such as:
++ rofi
++ tint2 bar
++ status menus
+
 * Rsync
 
 Rsync is a useful utility for synchronising files and dir contents (remotely or locally)
