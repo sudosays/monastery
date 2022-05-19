@@ -1,0 +1,105 @@
+#+title: Wheel of Time Notes
+#+options: toc:nil
+
+*WARNING!* These notes contain spoilers and working theories for the Wheel of Time series by Robert Jordan.
+
+Reading progress:
+1. [-] /The Eye of the World/
+2. [ ] /The Great Hunt/
+3. [ ] /The Dragon Reborn/
+
+#+toc: headlines 2
+
+* Characters
+** Rand al'Thor
+Son of Tam al'Thor and Kari (sp?)
+** Perrin Aybara
+** Matrim Cauthon
+** Thom Merrilin
+** Moiraine
+** Lan
+** Padan Fain
+** Elyas
+** Tam al'Thor
+** Egwene
+** Nynaeve
+** Min
+** Ba'alzamon
+* Significant Figures
+For figures that are mentioned or in other ways do not directly interact with other characters
+** The Dark One
+** Shai'tan
+** False Dragons
++ Logain
+** Artur Paendrag Hawking
+
+
+* Dreams and Visions
+
+* Symbols
+
+* Monsters and Creatures
+** Trollocs
+** Drakahr
+** Halfmen Fades
+** Darkfriends
+** Forsaken
+* Factions and Groups
+** Aes Sedai
+
+** Warders
+
+** Children of the Light
+From/headquarters: Amador?
+Known members:
++ Child Byar
++ Lord Captain Geofram Bornhald (Anointed of the Light [title])
+  - Has a son Dain
+
+Ranks/Titles:
++ Questioners
++ Lord Captain
++ Anointed of the Light
+
+Tenets:
++ "No man is so lost that he cannot be brought to the Light."
+
+** Forsaken
+** Women's Circle of Emond's Field
+** Village Council of Emond's Field
+* Histories
+** Age of Legends
+** Time of Madness
+** War of Hundred Years
+* Myths
+** Breaking of the World
+
+** Stone of Tear
+
+** Hunt for the Horn
+* Locations
+** Tar Valon
+** Stedding of Artur Hawkwing
+** Two Rivers
+** Emond's Field
+** Taren Ferry
+** Whitebridge
+** Caemlyn
+** Baerlon
+** Shadar Logoth
+* Magic and Metaphysics
+** Time and Ages
+** The Pattern
+** True Source
+** One Power
+Saidan saitan male/female representations
+** Stedding
+** Wolfkin
+Known practitioners: Elyas, Perrin (acolyte/unrealised)
+Abilities: mental link/telepathy with wolves.
+* Working Theories
+** The Female Half of the One Power is Tainted
+    _Supporting evidence:_
+    1. In /The Eye of the World/ Nynaeve notes that she can feel a sickly oily energy flowing around them.
+        If the male half of the One Power is inaccessible to her, then she must be feeling the female half of the power, which feels tainted.
+    2. Use of the One Power by women has a negative effect on them. Touching the One Power without guidance or training is considered dangerous.
