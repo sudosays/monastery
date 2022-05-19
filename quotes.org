@@ -51,13 +51,97 @@ What one fool can do, another can."
 #+end_quote
 
 #+begin_quote
-"It takes a lifetime to master the shakuhachi. The earlier you start, the longer it takes"
+"It takes a lifetime to master the shakuhachi. The earlier you start, the longer it takes."
 
 --- Anonymous
 #+end_quote
 
 #+begin_quote
-"The mind is not a vessel to be filled, but a fire to be kindled"
+"The mind is not a vessel to be filled, but a fire to be kindled."
 
 --- Plutarch
+#+end_quote
+
+#+begin_quote :work:
+"Work spares us from three evils: boredom, vice, and need."
+
+--- Voltaire
+#+end_quote
+
+#+begin_quote
+"Grief, I’ve learned, is really just love. It’s all the love you want to give,
+but cannot. All that unspent love gathers up in the corners of your eyes, the
+lump in your throat, and in that hollow part of your chest. Grief is just love
+with no place to go."
+
+--- Jamie Anderson
+#+end_quote
+
+#+begin_quote
+"The separation of talent and skill is one of the greatest misunderstood
+concepts for people who are trying to excel, who have dreams, who want to do
+things. Talent you have naturally. Skill is only developed by hours and hours
+and hours of beating on your craft."
+
+--- Will Smith
+#+end_quote
+
+#+begin_quote
+"my body renews itself in waves of ocean and blood"
+
+--- rupi kaur
+#+end_quote
+
+#+begin_quote
+"I saw my life branching out before me like the green fig tree in the story.
+From the tip of every branch, like a fat purple fig, a wonderful future beckoned
+and winked. One fig was a husband and a happy home and children, and another fig
+was a famous poet and another fig was a brilliant professor, and another fig was
+Ee Gee, the amazing editor, and another fig was Europe and Africa and South
+America, and another fig was Constantin and Socrates and Attila and a pack of
+other lovers with queer names and offbeat professions, and another fig was an
+Olympic lady crew champion, and beyond and above these figs were many more figs
+I couldn't quite make out. I saw myself sitting in the crotch of this fig tree,
+starving to death, just because I couldn't make up my mind which of the figs I
+would choose. I wanted each and every one of them, but choosing one meant losing
+all the rest, and, as I sat there, unable to decide, the figs began to wrinkle
+and go black, and, one by one, they plopped to the ground at my feet."
+
+--- Sylvia Plath
+#+end_quote
+
+#+begin_quote
+“The most important step a man can take. It's not the first one, is it?
+It's the next one. Always the next step, Dalinar.”
+--- Brandon Sanderson, Oathbringer
+#+end_quote
+
+#+begin_quote
+"The axe forgets; the tree remembers."
+--- African proverb
+#+end_quote
+
+#+begin_quote
+"Talk is cheap."
+#+end_quote
+
+#+begin_quote
+"Data, data, data! I cannot make bricks without clay."
+--- Sherlock Holmes
+#+end_quote
+
+#+begin_quote
+"Work expands so as to fill the time available for its completion."
+--- Parkinson's Law
+#+end_quote
+
+#+begin_quote
+"To improve  is to change; to be perfect  is to change often"
+--- Winston  Churchill
+#+end_quote
+
+#+begin_quote
+"I believe the common denominator of the universe is not harmony, but chaos,
+hostility, and murder."
+--- Werner Herzog
 #+end_quote

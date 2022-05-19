@@ -1,0 +1,7 @@
+
+
+** Reference management
+
+Zotero+ BetterBibTeX + Zotfile
+
+Use zotfile to save pdfs into  a Dropbox folder (or  similar) and rename using the bibtex citation key {%b}

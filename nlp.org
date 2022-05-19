@@ -1,0 +1,7 @@
+#+title: Natural Language Processing
+
+NLP lies at the  intersection of many unique fields from mathematics and computer  science to linguistics and sociology.
+
+Applications of NLP+ML research are even more diverse as it deals with spoken and written languages: the fundamental backbone of human communication.
+
+Resources used:

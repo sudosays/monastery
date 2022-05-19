@@ -1,0 +1,66 @@
+#+title: Lisps
+
+Most of the notes here are for Common Lisp. Specific Lisps are given notes at
+the end of the document.
+
+tutorial followed:[[https://github.com/rabbibotton/clog/blob/main/LEARN.md][Learn Clog]]
+
+Currently on:[[https://docs.google.com/document/d/1Yv8PtBJDwg4fqZtIYNmYDw_8N3KwlCzcO_urI9-NwIk][03 - Evolution - Packages and Systems]]
+
+* Packages
+
+To change to a different package use ~IN-PACKAGE~
+
+There is a special package called "KEYWORD". Any symbol starting with a colon
+':' is treated as a symbol from the "KEYWORD" package and is local to all
+packages. Like all symbols by default the reader upcases them.
+
+
+* Forms
+
+Units of interaction in Common Lisp
+
+Different forms:
++ self-evaluating :: numbers etc
++ symbols :: var names etc
++ lists :: multiple subtypes such as:
+  - special forms, marco calls, function calls
+
+** Symbols
+
+The reader macro
+
+=#'= is a "reader macro" that returns the function that a symbol names.
+
+Symbols are "types" in Lisp and can be used as-is.
+The "reader" is placed before a symbol using the apostrophe.
+
+Symbols are automatically upper-cased unless the pipes are used.
+
+#+begin_src lisp
+(equal 'my-symbol 'My-symbol)
+
+#+end_src
+
+#+RESULTS:
+: T
+
+vs
+
+#+begin_src lisp
+(equal '|my-symbol| '|My-symbol|)
+#+end_src
+
+#+RESULTS:
+: NIL
+
+Finally:
+
+#+begin_src lisp
+(equal 'a-symbol '|A-SYMBOL|)
+#+end_src
+
+#+RESULTS:
+: T
+
+*** Uninterned symbols

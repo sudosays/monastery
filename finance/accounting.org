@@ -1,0 +1,5 @@
+#+title: Accounting
+
+Sources used:
++ [[https://www.gnucash.org/viewdoc.phtml?rev=4&lang=C&doc=guide][GnuCash Docs]]
++ [[https://martin.kleppmann.com/2011/03/07/accounting-for-computer-scientists.html][Accounting for Computer Scientists]]
