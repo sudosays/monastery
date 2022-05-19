@@ -1,0 +1,17 @@
+#+title: Monastery Omnibus
+#+author: Julius James Stopforth
+#+options: toc:nil date:nil
+
+#+toc: headlines 2
+
+* Mathematics
+** Statistics
+#+include: statistics.org :lines "3-"
+* Programming Languages
+** Julia
+#+include: julia.org :lines "3-"
+** Rust
+#+include: rust.org :lines "3-"
+* Miscellania
+** Quotes
+#+include: quotes.org :lines "3-"
