@@ -18,3 +18,18 @@ Examples:
    #end_example
 
    The ~-r~ flag is for recursing into directories. /Note that the trailing slash on the directories is important to ensure that rsync understands that the directory is being compared to a directory./
+
+* SSH & SFTP
+
+Connect to SFTP via jump host
+
+Use the ~-J~ flag to specify jump hosts a la:
+#+begin_src bash
+sftp -J user@jumpserver user@destination
+#+end_src
+
+*** Auto start reverse SSH on startup
+
+https://askubuntu.com/questions/757779/auto-start-a-reverse-ssh-tunnel-on-system-startup
+
+Suggested autossh
