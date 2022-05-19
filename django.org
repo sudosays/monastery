@@ -65,3 +65,9 @@ the include() func allows importing of another apps url confs by
 chopping off the URL up to that point and sending the remainder for
 processing by the app's URL handling. This allows for the app to only
 have to do it's own processing without worrying about full paths.
+
+* Deployment Checklist
+
+[[https://getpocket.com/read/3522111298][6 Harmful Defaults in Django]]
+
+Apply migrations
