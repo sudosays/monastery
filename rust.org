@@ -1,26 +1,18 @@
 #+title: Rust
-#+OPTIONS: author:nil date:nil
+#+OPTIONS: author:nil date:nil toc:2
 
-* Summary
+Continue from [[https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html#the-string-type][The ~String~ Type]] in the [[*Ownership][Ownership]] section.
 
-[[./intro.md][Introduction]]
-+ [[./learning_path.md][Learning Path]]
-+ [[./hello_world.md][Hello World!]]
-+ [[./println.md][The ~println!~ Macro]]
-+ [[./cargo.md][Cargo]]
-+ [[./data_types.md][Data Types]]
-+ [[./vars_consts.md][Variables and Constants]]
-+ [[./loops.md][Loops!]]
-+ [[./read_stdio.md][Reading from ~stdio~]]
-+ [[./match_exprs_comparators.md][Match Expressions and Comparators]]
-+ [[./results_errors.md][Result Types and Error Handling]]
-+ [[./assoc_func.md][Associated Functions]]
-[[./documentation.md][Reading the Documentation]]
+
 
 * Introduction
 
 These notes are made from studying this
 [[https://doc.rust-lang.org/book/title-page.html][book]]
+
+** Installing Rust
+
+It is recommended to use the ~rustup~ command.
 
 * Learning Path
 
@@ -501,10 +493,27 @@ following:
 
 The underscore is a wildcard that will match any value, but not bind to
 it (meaning you won't be able to use the underscore in an expression).
-* Ownership in Rust
+* Ownership
+ It is essential to understand Rust's ownership model as it is what enables Rust to be memory safe without a garbage collector.
 
-  :CUSTOM_ID: ownership-in-rust
-  :END:
+If any ownership rules are violated, the Rust program will not compile.
+
+Heap vs Stack allocation affects how values are handled in Rust.
++ Stack :: Last in First Out (LIFO) memory structure. All data on the stack must have a known, fixed size at compile time. If the size is not known at compile time or dynamic it cannot be put onto the stack.
++ Heap :: Memory can be allocated as necessary and a pointer to the memory is returned. These pointers can be pushed onto the stack.
+
+Pushing onto the stack is faster than heap allocation. Access on the stack is also faster, but limited to popping items off in order.
+
+Ownership addresses the issues surrounding heap management.
+
+Ownership rules:
++ Each value has an /owner/ variable.
++ There can only be one owner at a time.
++ When an owner goes out of scope, the value is dropped.
+
+
+
+
 * The ~println!~ Macro
 
   :CUSTOM_ID: the-println-macro
