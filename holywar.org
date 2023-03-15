@@ -1,0 +1,32 @@
+#+title: Holywar
+
+These are my thoughts on the vi (vim, neovim etc) vs emacs debate.
+
+* Church of Emacs
+
+Currently using: DOOM Emacs
+
+Previously tried: Spacemacs
+
+** Likes
++ Org-mode
++ Customisability with elisp
+
+** Dislikes
++ Terminal emulation is iffy at best
+
+* Cult of vi
+
+Previously tried:
++ Vanilla vim + custom vimconf (changed leader keys etc)
+  - plugins managed with pathogen
++ Neovim (needs experimentation w/ plugins)
+
+** Likes
++ Fast, snappy load times
++ terminal native.
+
+** Dislikes
++ Lacks image support (cause term)
++ vimconf can break/be finicky
++ Plugin updating is an annoyance

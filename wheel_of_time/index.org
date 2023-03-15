@@ -12,7 +12,8 @@ Reading progress:
 
 * Characters
 ** Rand al'Thor
-Son of Tam al'Thor and Kari (sp?)
+
+Son of [[*Tam al'Thor][Tam al'Thor]] and Kari (sp?)
 ** Perrin Aybara
 ** Matrim Cauthon
 ** Thom Merrilin
@@ -21,6 +22,12 @@ Son of Tam al'Thor and Kari (sp?)
 ** Padan Fain
 ** Elyas
 ** Tam al'Thor
+
+Father of [[*Rand al'Thor][Rand al'Thor]]
+
+Backstory:
+Possibly master swordsman
+
 ** Egwene
 ** Nynaeve
 ** Min
@@ -33,10 +40,46 @@ For figures that are mentioned or in other ways do not directly interact with ot
 + Logain
 ** Artur Paendrag Hawking
 
-
 * Dreams and Visions
+** Rand's First Dream
+Pursued in a wasteland towards a black mountain. Felt called towards it. Refused
+and (possibly traveled) to Tar Valon. Upon entering the city he was encouraged
+to go towards the tower. When he does he is showered with flowers until he
+enters and sees the Fade.
+** The First Dream of Ba'alzamon
+Rand, Mat, and Perrin had the same dream with differing details.
 
+Running around a castle thirsty with the sound of dripping water.
+
+Upon entering a room, Ba'alzamon is standing in front of a fireplace where the
+oval stones look like faces twisted in pain and horror.  Outside the window a
+storm of red and grey clouds rages.  He offers a drink which Rand refuses. He
+then threatens Rand and breaks the back of the goblet turned rat.
+
+On waking, Rand discovers many many rats in the inn with her back broken.
+** Min's Visions of the Pattern
+_Rand_
+_Mat_
+_Lan_
+Seven broken towers
+An infant in a crib holding a sword
+_Perrin_
+Wolves
+** Rand's Pursuit in the Maze
+
+** Perrins Wolf dreams
+Perrin is
 * Symbols
+** Symbol of the Aes Sedai
+Resembles yin yang, but also possibly two interlocked Dragon Teeth
+** The Dragon Tooth
+** The Heron
+
+Sign of a master swordsman.
+
+Occurances:
+Tam al'Thors scabbard
+Recognised by Trollocs and Warder Lan
 
 * Monsters and Creatures
 ** Trollocs
