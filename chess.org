@@ -1,0 +1,15 @@
+#+title: Chess
+
+Resources:
++ [[https://chessfox.com/][Chessfox's 10-Day Chess Challenge]]
+
+Play chess online:
++ [[https://lichess.org/][Lichess]]
++ [[https://www.chess.com][Chess.com]]
+
+
+* Openings
+** King's Pawn Opening
+** Caro-Khan Defense
+
+Answer 1.e4 with c6
