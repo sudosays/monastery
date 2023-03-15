@@ -36,3 +36,10 @@ There is a distinction between sample standard deviation and population
 standard deviation.
 
 The standard deviation is the square root of the variance (also discussed here)
+
+
+* Numpy
+
+** Gotchas
+
+When generating an array of continuous values over a range, it is better to use ~numpy.linspace~ as opposed to ~numpy.arange~.

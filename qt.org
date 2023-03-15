@@ -1,0 +1,96 @@
+#+title: Qt Development
+
+* General
+
+Qt apps can be created without a UI using the QtCore and other modules.
+GUI Qt apps are created using the QtWidgets modules referred to as widgets.
+
+** Terms
+
++ Qt :: Framework or the Qt Project that develops the framework.
++ QML :: A declarative language for writing Qt UIs different to Widgets.
++ qtbase :: Component that contains the modules such as ~QtCore~ etc.
++ Widgets :: graphical components for creating GUI Qt apps.
+
+
+** Tools
+
++ QtCreator :: IDE for creating and developing Qt applications.
++ Designer :: Program for designing QtWidgets forms.
+
+
+
+
+
+* Qt for Python
+
+** Useful commands
+
+| Description                             |
+Command                               | |-----------------------------------------+---------------------------------------| |
+Generate Python file from ~.ui~ file    | ~pyside6-uic -i form.ui -o
+form.py~   | | Generate Python file from ~.qrc~ file   | ~pyside6-rcc -i res.qrc
+-o rc_res.py~ | | Opening Qt Designer to edit ~.ui~ files |
+~pyside6-designer~                    |
+
+** File types
+
++ **Python files (.py)** :: main source code files of Qt for Python projects.
++ **User Interface Definition files (.ui)** :: XML based files describing widgets.
+  Can be used to generate Python files (see:[[*Useful commands][Useful commands]]).
++ Resource collection files (.qrc) :: List of binary files that will be used alongside the application. XML based.
++ Qt Modeling Language files (.qml) :: QML files are not related to Qt Widgets files. Can be loaded in Python however with Qt quick.
++ Qt Creator Python Project files (.pyproject) :: For QT Creator to load Python based projects.
+
+** App distribution
+Same as with normal Python projects.
+Requirements file and such.
+
+
+** Signals and Slots
+
+Signals and slots are used to communicate between QtWidgets and/or code.
+
+When creating slots always use the ~@Slot()~ decorator from
+~PySide6.QtCore.Slot~.
+
+Many widgets have predefined signals. For example, the QPushButton has a signal
+~clicked~ that can be accessed with ~QPushButton.clicked.connect(func)~.
+
+A signal connects to a slot.
+
+Signals are emitted by objects, and the object is unaware if anything is
+recieving the signal.
+
+Slots are used for receiving signals, but are also normal member functions.
+Slots are also unaware of whether or not a signal is attached to it.
+
+Multiple signals can be connected to the same slot and multiple slots can be
+connected to the same signal.
+
+*** Signals
+
+A signal can even be connected to a signal meaning that the second signal will
+be emitted immediately whenever the first is emitted.
+
+When writing Qt classes in Python signals are declares as class level vars of
+type/class QtCore.Signal().
+
+The constructor for QtCore.Signal takes a touple or list of Python types, Qt
+types, and C types.
+
+Signals may also be named by supplying the kwarg for name otherwise it will take on the name of the variable it is being assigned to.
+
+Signal arguments can also be given names/labels with a list and the kwarg ~arguments~.
+
+*** Slots
+
+Defining slots must be preceded with the ~@QtCore.Slot()~ decorator.
+
+As with signals, slots accept a name keyword, and add a result keyword that defined the type that will be returned.
+
+*** Overloaded Signals and Slots
+
+Signals and slots can also be overloaded with different types.
+
+However, moving forward, signals should have distinct names for different types.

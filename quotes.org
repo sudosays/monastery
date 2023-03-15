@@ -113,11 +113,13 @@ and go black, and, one by one, they plopped to the ground at my feet."
 #+begin_quote
 “The most important step a man can take. It's not the first one, is it?
 It's the next one. Always the next step, Dalinar.”
+
 --- Brandon Sanderson, Oathbringer
 #+end_quote
 
 #+begin_quote
 "The axe forgets; the tree remembers."
+
 --- African proverb
 #+end_quote
 
@@ -127,21 +129,41 @@ It's the next one. Always the next step, Dalinar.”
 
 #+begin_quote
 "Data, data, data! I cannot make bricks without clay."
+
 --- Sherlock Holmes
 #+end_quote
 
 #+begin_quote
 "Work expands so as to fill the time available for its completion."
+
 --- Parkinson's Law
 #+end_quote
 
 #+begin_quote
 "To improve  is to change; to be perfect  is to change often"
+
 --- Winston  Churchill
 #+end_quote
 
 #+begin_quote
 "I believe the common denominator of the universe is not harmony, but chaos,
 hostility, and murder."
+
 --- Werner Herzog
+#+end_quote
+
+#+begin_quote
+"You must take your opponent into a deep dark forest where 2+2=5, and the path
+leading out is only wide enough for one."
+
+--- Mikhail Tal
+#+end_quote
+
+#+begin_quote
+"There is a pleasure in the pathless woods,
+There is rapture in the lonely shore,
+There is a society where none intrude,
+I love not man less, but nature more."
+
+--- George Gordon, Lord Byron
 #+end_quote

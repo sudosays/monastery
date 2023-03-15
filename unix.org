@@ -42,6 +42,16 @@ Use the ~-J~ flag to specify jump hosts a la:
 sftp -J user@jumpserver user@destination
 #+end_src
 
+** Use ~ssh-copy-id~ to store authorized keys on a remote server
+
+If you have already generated an ssh key, then it can be used to automatically authenticate you to a remote server.
+
+you can also do so via a jumphost with the following:
+#+begin_src shell
+ssh-copy-id -o ProxyJump=jump@host.server -i ~/.ssh/idfile user@target.server
+#+end_src
+
+
 *** Auto start reverse SSH on startup
 
 https://askubuntu.com/questions/757779/auto-start-a-reverse-ssh-tunnel-on-system-startup
