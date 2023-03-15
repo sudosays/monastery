@@ -1,0 +1,60 @@
+#+title: Python
+
+* Scripting with Python
+
+
+
+* Cool libraries
+
+** Data wrangling
+
++ pandas :: Excellent tabular data
++ numpy :: Speedy and flexible arrays
++ matplotlib :: de-facto plotting for data
+
+** Science
+
++ scipy
++ scikit-learn
++ nltk
+
+*** Machine Learning & AI
+
++ torch
++ tensorboard
+
+** Utility
+
++ virtualenv :: virtual environments and dependency management
++ black :: sane python formatter
++ tqdm :: A way to show progressbars
++ rich :: a pretty printing library
+
+** Files
+
++ pandoc
++ pdfplumber
++ pyxl
++ python-docx
+
+** Documentation
+
++ sphinx
+
+** Webdev
+
++ django
+
+** UI
+
+ + tkinter
+
+
+* Logging
+
+Logging is a very important aspect of tracing and running Python scripts
+Logging with Rich: https://rich.readthedocs.io/en/stable/logging.html
+
+[[https://stackoverflow.com/questions/35088016/logging-in-a-python-project-with-multiple-points-of-entry][Logging in a Python project with multiple points of entry]]
+
+* References

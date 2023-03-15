@@ -57,3 +57,23 @@ ssh-copy-id -o ProxyJump=jump@host.server -i ~/.ssh/idfile user@target.server
 https://askubuntu.com/questions/757779/auto-start-a-reverse-ssh-tunnel-on-system-startup
 
 Suggested autossh
+
+
+* Simple job queuing with ~flock~
+
+
+Example queuing script:
+#+begin_src bash
+#!/usr/bin/bash
+​
+LOCKFILE=/tmp/gpu.lock
+​
+exec 100>"$LOCKFILE" || exit 1
+​
+#echo "User shell is $SHELL"
+echo "Waiting for GPU availability..."
+flock 100 || exit 1
+echo "GPU is available. Executing commands..."
+$@
+echo "Done. Releasing GPU lock."
+#+end_src
