@@ -1,0 +1,12 @@
+#+title: Orgmode Notes
+
+Docs and resources:
++ [[https://orgmode.org/manual/][The Org Manual]]
+
+* Inlining and Generating Images with PlantUML
+
+* Timestamps and Dates
+
+* Tagging System
+
+Tags may be applied to any headline using syntax ~:[a-zA-Z0-9_@]:~. These can then be searched and indexed and inherited extensively with orgmode.

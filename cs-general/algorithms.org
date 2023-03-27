@@ -241,3 +241,12 @@ operations ($O(\log{}n)$ each) to do the final sort.
 #+end_src
 
 * Data Structures
+* Metrics and Complexity Measurements
+
+** Cyclomatic Complexity
+
+A measure of the number of independent paths through a program to indicate the level of complexity.
+
+It is typically computed from a control-flow graph representation of the program.
+
+Therefore the complexity M is E - N + 2P where E is the number of edges in the graph, N is the number of nodes and P is the number of connected components (independent sub graphs)

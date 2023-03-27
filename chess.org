@@ -13,3 +13,34 @@ Play chess online:
 ** Caro-Khan Defense
 
 Answer 1.e4 with c6
+
+* Glossary
+
+** Attraction
+
+A motif involving an inviting or forced caputre to draw a piece onto a square for a follow up move.
+
+** Deflection
+
+Make a piece move away from the position
+
+
+*  Chessfox Challenge Notes
+
+Lichess study link: https://lichess.org/study/OVyNKmzm
+
+** Day 1
+
+5 Step calculation method:
+
+1. Find opponent's threats
+   + Potential checks, undefended pieces.
+   + Essentially performing calculation from opponent's POV
+2. Identify tactical targets and motifs
+   + Look for pins, skewers, discovered attacks etc
+   + Tactical targets are ones who can be placed under threat or weakened.
+3. Calculate all the checks
+4. Calculate all the captures
+5. Calculate all the tempo moves
+   + Tempo moves make a serious threat against the opponent that they have to respond to and make them lose a tempo
+

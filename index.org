@@ -6,6 +6,7 @@ directly to that section in the literature or browse the entire notebook.
 * By Topic
 ** Artificial Intelligence
 + [[file:rl.org][Reinforcement Learning]]
++ [[file:ai/nlp.org][Natural Language Processing]]
 ** Programming Languages
 + [[file:cpp.org][C++]]
 + [[file:golang.org][Golang]]
@@ -15,11 +16,18 @@ directly to that section in the literature or browse the entire notebook.
 + [[file:react.org][React]]
 + [[file:android.org][Android]]
 + [[file:django.org][Django]]
-** Other
++ [[file:dev-frameworks/qt.org][QT]]
+** Computer Related
 + [[file:kernel.org][Linux Kernel development]]
 + [[file:unix.org][Unix systems]]
 + [[file:algorithms.org][Algorithms and Data Structures]]
 + [[file:sicp.org][Notes on SICP]]
++ [[file:tools/docker.org][Docker]]
++ [[file:tools/apptainer.org][Apptainer]]
+** Mathematics and Philosophy
++ [[file:math/math.org][Mathematics]]
++ [[file:math/statistics.org][Statistics]]
+
 * By Dewey System
 ** 000 - Computer Science
 

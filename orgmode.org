@@ -1,7 +1,0 @@
-#+title: Orgmode Notes
-
-* Inlining and Generating Images with PlantUML
-
-* Timestamps and Dates
-
-* Tagging System

@@ -1,7 +1,74 @@
+#+title: Handbook and Notes on Conducting Scientific Research
+
+* Reading Papers
+
+** Color Coding highlights
+
+Many pdf programs allow you to use multiple colors when highlighting a paper. This is the coloring scheme i use:
+
++ Blue : first pass read, general interesting content
++ Yellow: Noteworthy claim, surprising
++ Green: Can be applied beyond paper (Follow up)
++ Red: In depth reading & commentary
+
+* Data storage and backup
+
+Using rsync
+
+using dropbox
+
+* Data Analysis and Plotting
+
+Tools used:
+
++ Jupyter Notebook
+
+Python libs:
++ matplotlib
++ numpy
++ pandas
+
+When creating figures make sure to use the Seaborn colorblind theme/style. It is a good default for making plots readable
+
+* LaTeX Writing
+
+** Use EPS figures or PDF figures to avoid rasterizing
+
+Libraries such as matplotlib
+
+check readability by viewing figures in black and white.
+
+Okular the pdf program is able to do this under the accessibility settings
 
 
-** Reference management
+* Zotero Tips and Tricks
 
-Zotero+ BetterBibTeX + Zotfile
+Essential add-ons:
++ BetterBibtex
++ ZotFile
 
-Use zotfile to save pdfs into  a Dropbox folder (or  similar) and rename using the bibtex citation key {%b}
+** Renaming files with ZotFile using BetterBibtex citation
+
+Under ZotFile preferences -> Renaming Rules use
+~{%b}~.
+
+This makes use of the citation key provided by BBT
+
+In Preferences->BetterBibtex set the citation key format to:
+~auth.lower+year+shorttitle(1,0).lower~
+
+Which produces: "yang2022learning"
+
+** Using Multiple Profiles with Zotero
+
+Add the flag ~--ProfileManager~ to zotero at startup.
+
+* Useful tools
+
+** Diagramming
+
+Graphviz
+PlantUML
+or even MetaPost: http://www.ursoswald.ch/metapost/tutorial.html
+
+Potentially drawio

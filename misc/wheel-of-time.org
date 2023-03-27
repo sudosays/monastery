@@ -4,9 +4,9 @@
 *WARNING!* These notes contain spoilers and working theories for the Wheel of Time series by Robert Jordan.
 
 Reading progress:
-1. [-] /The Eye of the World/
-2. [ ] /The Great Hunt/
-3. [ ] /The Dragon Reborn/
+1. [X] /The Eye of the World/
+2. [X] /The Great Hunt/
+3. [X] /The Dragon Reborn/
 
 #+toc: headlines 2
 
