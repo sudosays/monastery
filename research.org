@@ -13,6 +13,8 @@ Many pdf programs allow you to use multiple colors when highlighting a paper. Th
 
 * Data storage and backup
 
+TIP: store pandas dataframes as HDF5 files! Also feather or parquet files because they are self-describing and fast to read as well as small on disk. Always add a info/schema description of files.
+
 Using rsync
 
 using dropbox

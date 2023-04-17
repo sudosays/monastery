@@ -33,6 +33,12 @@ Examples:
 
    The ~-r~ flag is for recursing into directories. /Note that the trailing slash on the directories is important to ensure that rsync understands that the directory is being compared to a directory./
 
+** Creating a File sync script with rsync
+
+1. Checking if the two dirs have differences.
+2. pushing changes
+3. pulling changes
+
 * SSH & SFTP
 
 Connect to SFTP via jump host

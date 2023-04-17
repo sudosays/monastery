@@ -167,3 +167,25 @@ I love not man less, but nature more."
 
 --- George Gordon, Lord Byron
 #+end_quote
+
+#+begin_quote
+"We are the sum total of our experiences. Those experiences – be they
+positive or negative – make us the person we are, at any given point in our
+lives. And, like a flowing river, those same experiences, and those yet to
+come, continue to influence and reshape the person we are, and the person we
+become. None of us are the same as we were yesterday, nor will be tomorrow."
+--- BJ Neblett
+#+end_quote
+
+#+begin_quote
+"Sometimes people use 'respect' to mean 'treating someone like a person' and
+sometimes they use 'respect' to mean 'treating someone like an authority'
+
+and sometimes people who are used to being treated like an authority say 'if you
+won't respect me I won't respect you” and they mean 'if you won't treat me like
+an authority I won't treat you like a person'
+
+and they think they're being fair but they aren't, and it's not okay."
+
+--- Autistic Abby, Tumblr user
+#+end_quote
