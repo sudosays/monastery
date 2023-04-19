@@ -1,1 +1,9 @@
 #+title: Emacs Notes
+
+
+* Toggle all timestamp headings in a logbook to inactive
+
+Evaluate the following in the buffer:
+#+begin_src elisp
+(org-map-entries '(lambda () (right-word 1)(org-toggle-timestamp-type)) "LEVEL=2")
+#+end_src
