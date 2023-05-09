@@ -67,10 +67,22 @@ Add the flag ~--ProfileManager~ to zotero at startup.
 
 * Useful tools
 
+
+
 ** Diagramming
 
-Graphviz
 PlantUML
+Graphviz
 or even MetaPost: http://www.ursoswald.ch/metapost/tutorial.html
 
 Potentially drawio
+
+** Notetaking and Keeping Lab Notes
+
+*** TODO Write up a comparison of the following programs
+
++ emacs+org-mode
++ rednotebook
++ xournal++
++ Notion
++ obsidian

@@ -1,0 +1,19 @@
+#+title: Notes on Artificial Intelligence
+
+* Backlog
+Things to check out and write about:
+
+** TODO XGBoost
+** TODO Pytorch
+** TODO My ML/DL workflow
+
+related topics:
++ data storage/metadata organisation for science
++ plotting and themes
++ using pandas
++ Taking notes (lab notes) for science in org
+
+
+** TODO Kaggle notes/cheatsheets
+
+Basic workflows and tools/approach

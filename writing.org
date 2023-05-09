@@ -1,0 +1,84 @@
+#+title: Notes on Writing
+
+Sources:
+
++ Painless Writing by Jeffrey Strausser
++ Hemingway's advice on writing: https://www.themarginalian.org/2016/01/04/with-hemingway-arnold-samuelson-writing/
+
+* Hemingway's Advice
+
+#+begin_quote
+The most important thing I've learned about writing is never write too much at a
+time… Never pump yourself dry. Leave a little for the next day. The main thing
+is to know when to stop. Don't wait till you've written yourself out. When
+you're still going good and you come to an interesting place and you know what's
+going to happen next, that's the time to stop. Then leave it alone and don't
+think about it; let your subconscious mind do the work.
+#+end_quote
+
+#+begin_quote
+The next morning, when you've had a good sleep and you're feeling fresh, rewrite
+what you wrote the day before. When you come to the interesting place and you
+know what is going to happen next, go on from there and stop at another high
+point of interest. That way, when you get through, your stuff is full of
+interesting places and when you write a novel you never get stuck and you make
+it interesting as you go along. Every day go back to the beginning and rewrite
+the whole thing and when it gets too long, read at least two or three chapters
+before you start to write and at least once a week go back to the start. That
+way you make it one piece. And when you go over it, cut out everything you can.
+The main thing is to know what to leave out. The way you tell whether you're
+going good is by what you can throw away. If you can throw away stuff that would
+make a high point of interest in somebody else's story, you know you're going
+good.
+#+end_quote
+
+#+begin_quote
+Don't get discouraged because there's a lot of mechanical work to writing. There
+is, and you can't get out of it. I rewrote A Farewell to Arms at least fifty
+times. You've got to work it over. The first draft of anything is shit. When you
+first start to write you get all the kick and the reader gets none, but after
+you learn to work it's your object to convey everything to the reader so that he
+remembers it not as a story he had read but something that happened to himself.
+That's the true test of writing. When you can do that, the reader gets the kick
+and you don't get any. You just get hard work and the better you write the
+harder it is because every story has to be better than the last one. It's the
+hardest work there is. I like to do and can do many things better than I can
+write, but when I don't write I feel like shit. I've got the talent and I feel
+that I'm wasting it.
+#+end_quote
+
+#+begin_quote
+Never compete with living writers. You don't know whether they're good or not.
+Compete with the dead ones you know are good. Then when you can pass them up you
+know you're going good. You should have read all the good stuff so that you know
+what has been done, because if you have a story like one somebody else has
+written, yours isn't any good unless you can write a better one. In any art
+you're allowed to steal anything if you can make it better, but the tendency
+should always be upward instead of down. And don't ever imitate anybody. All
+style is, is the awkwardness of a writer in stating a fact. If you have a way of
+your own, you are fortunate, but if you try to write like somebody else, you'll
+have the awkwardness of the other writer as well as your own.
+#+end_quote
+
+
+* Reduce the use of passive voice
+
+Passive voice is where the subject is acted upon by another performer removing
+their agency. Hallmark is a 'to be' conjugation linked to a verb.
+
+Examples of passive voice:
+
+"The rifle was fired by the general"
+
+The general is the subject firing the rifle.
+
+"the code was given to the spy by the informant"
+
+The informant is the one handing out the codes.
+
+From Painless writing.
+
+1. Use active voice instead of passive voice as much as possible. Gives action to writing and maintains energy.
+2. Passive voice stays if the writer does not know or chooses not to reveal the performer of an action.
+3. Passive voice stays if the person or thing receiving the action is more important thant the one performing the action (showing relative importance). e.g. "The king was warmly received by his subjects".
+4. If a sentence contains two verbs with the same subject, a shift of voice (active<->passive) it may be necessary to preserve the flow of a sentence.
