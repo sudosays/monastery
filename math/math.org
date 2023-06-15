@@ -11,3 +11,15 @@ For good bookshelves to browse check out the following links:
 + [[https://www.people.vcu.edu/~rhammack/BookOfProof/][Book of Proof by Richard Hammack]]
 
 * Set Theory
+
+
+* Golden Ratio
+
+** Drawing the Golden Ratio with Processing
+
+some numbers
+
+| n |                    0 |               1 | 2 | 3 | n               |
+| l | 1 or $\frac{1}{\phi^0}$ | $\frac{1}{\phi^1}$ |   |   | $\frac{1}{\phi^n}$ |
+| x |                    0 |               1 |   |   | ??              |
+| y |                    0 |               0 |   |   | ??              |
