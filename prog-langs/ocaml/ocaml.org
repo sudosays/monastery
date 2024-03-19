@@ -1,0 +1,143 @@
+#+title: OCaml
+
+
+Current source: [[https://cs3110.github.io/textbook/][(Book) OCaml Programming: Correct + Efficient + Beautiful]]
+
+Continue from: [[https://cs3110.github.io/textbook/chapters/basics/expressions.html][2.3 Expressions]]
+
+OCaml is an Object-Oriented functional programming language. It features a
+package manager (OPAM) and build system (Dune). it is a dialect of the ML (Meta
+Language) then Classic ML.
+
+Features
+
++ Immutability is a default of values. Mutable state programming is possible
+  with OCaml, but immutability is the preferred default.
++ Type-safe
++ Statically-typed, i.e. types are determined at runtime.
+
+OCaml uses modules to structure systems.
+
+* Basics
+
+Binding values to names with ~let~ e.g. ~let answer = 42;;~
+
+Functions can be defined similarly to binding variables with
+#+begin_src ocaml
+# let increment x = x + 1;;
+val increment : int -> int = <fun>
+#+end_src
+
+Functions are not called, they are /applied/.
+
+Parentheses can be used to chain together applications, but are not entirely
+necessary. The preferred style is to omit parentheses.
+
+#+begin_src ocaml
+# increment (increment 5);;
+- : int = 7
+#+end_src
+
+The ~_~ means to leave blank a result or name.
+
+** Compilation
+Use ~ocamlc~ to compile programs. The ~-o~ option specifies the name of the exe.
+
+??: .cmi and .cmo files?
+
+
+* Tools
+
+** Toplevel or ~utop~
+
+A REPL environment for interactively working with OCaml programs
+
+Double semicolons (~;;~) are used to end expressions.
+
+
+*** Responses
+
+Given:
+#+begin_src ocaml
+# 42;;
+- : int = 42
+#+end_src
+
+
+Binding a variable:
+#+begin_src ocaml
+# let answer = 42;;
+val answer : int  = 42
+#+end_src
+
+Defining a function:
+#+begin_src ocaml
+# let increment x = x + 1;;
+val increment : int -> int = <fun>
+#+end_src
+
+
+
+*** Directives
+
+Directives for toplevel itself are prefixed with ~#~.
+
+The ~#use~ directive loads all the code from a file into toplevel as if it had
+been typed in manually.
+
+** Dune build system
+
+Dune projects are a single root directory with possibly many subdirectories.
+Each directory can contain a 'dune' file taht describes how the code should be
+compiled. Dune files use s-expressions that use parentheses to show hierarchy
+(similar to LISP).
+
+A 'dune-project' file is necessary at teh root of the project to specify project
+metadata and configure dune.
+
+Compiled executables are placed in the '_build' directory. ~dune exec
+./hello.exe~ will automagically run the compiled executable.
+
+~dune clean~ will tidy things up by removing the '_build' directory.
+
+new projects can be started with ~dune init project <projname>~.
+
+~dune build --watch~ can automatically rebuild everytime a file is saved in the project.
+
+
+
+
+* Notable Quotes and Notes
+
+#+begin_quote
+The reality of mutability is that whereas machines are good at complicated
+manipulation of state, humans are not good at understanding it. The essence of
+why that’s true is that mutability breaks referential transparency: the ability
+to replace an expression with its value without affecting the result of a
+computation.
+#+end_quote
+
+* Glossary
+
+** OPAM
+
+OCaml Package Manager
+
+** switch
+
+A switch is like a virtualenv for OCaml. It is a named installation with a
+particular compiler version and set of packages.
+
+** Dune
+
+Build system for OCaml projects
+
+** Algebraic data types
+
+Types that are formed by combining other data types.
+
+** Module
+
+Encapsulation of implementations behind interfaces. functors can manipulate
+modules.
+

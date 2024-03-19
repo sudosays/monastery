@@ -1,0 +1,54 @@
+#+title: Glossary for Programming Languages
+
+
+* Syntax
+
+Related to the linguistic concept of syntax.
+
+The rules that define valid combinations of symbols to form correct programs in
+a language. These are "superficial" in the sense that they encforce the form of
+valid statements or expressions that make up a program.
+
+Related:
+
++ syntactic sugar
++ semantics
+
+
+
+
+
+* Semantics
+
+The rules that define the behaviour of a program. These can be anything from how
+variables are assigned or accessed, to how loops work. If the syntax determines
+the form of a program, the semantics decide the function of that program. A
+program may be syntactically correct but semantically incorrect. In other words,
+you have written correctly formed statements, but they are not allowed in
+context of the language rules.
+
+These can be either dyanmic (run-time) or static (compile-time). For example,
+Rust is heavy on static semantic checking with the borrow-checker, while Python
+emphasises a dynamic semantics check at runtime to enable a permissable approach.
+
+Related:
+
++ syntax
+
+
+
+
+* Idioms
+
+In a programming language these refer to the commonly accepted ways to express
+computations. Writing "idomatic" code is to say doing it the way that the
+community agrees is best practice in a language. Idomatic code is also usually
+the most efficient approach as it leverages the features of the language to its
+benefit.
+
+Examples include Python's list comprehensions, or Rust's collectors/iterator
+patterns.
+
+Related:
+
++ syntactic sugar
